@@ -11,7 +11,9 @@ import Select from '@mui/material/Select';
 const Navbar=()=>{
     const age=''
     return(
-          <Grid container sx={{ borderBottom: 1  }}>
+          <Grid container 
+          // sx={{ borderBottom: 1  }}
+          >
 
             <Grid item  lg={4}  sx={{ }}>
             <Stack direction='row'>  
