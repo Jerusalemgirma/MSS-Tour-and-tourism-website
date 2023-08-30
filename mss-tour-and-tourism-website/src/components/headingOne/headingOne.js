@@ -31,6 +31,19 @@ const HeadingOne=()=>{
 
 
          </Stack>
+
+           <Box><h2 style={{ paddingLeft:'100px', paddingRight:'100px' }}>
+           Ethiopia, in the Horn of Africa, is a rugged, landlocked country 
+           split by the Great Rift Valley. With archaeological
+            finds dating back more than 3 million years, it’s a place of ancient culture
+
+             </h2>
+        </Box>
+
+         {/* <Box sx={{ height:'700px', backgroundColor:"powderblue" }}>
+
+         </Box> */}
+         
         </Box>
 
         )
