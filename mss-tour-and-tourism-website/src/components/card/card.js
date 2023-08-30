@@ -12,13 +12,13 @@ import Typography from '@mui/material/Typography';
 import img from '../../assets/img1.png'
 
 
-  const Cardd=()=>{
+  const Cardd=({imagee})=>{
      return(
         <div>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{  }}>
              <CardMedia
-               sx={{ height: 140 }}
-               image={img}
+               sx={{ height: 250 }}
+               image={imagee}
               title="green iguana"
             />
 
@@ -33,8 +33,8 @@ import img from '../../assets/img1.png'
          </CardContent>
 
          <CardActions>
+           <Button size="small">Read more...</Button>
            <Button size="small">Share</Button>
-           <Button size="small">Learn More</Button>
         </CardActions>
     </Card>
         </div>
