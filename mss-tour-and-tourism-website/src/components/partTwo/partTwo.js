@@ -1,6 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import  React ,{ useState, useEffect } from "react";
 
+import img1 from '../../assets/img2.jpg'
+import img2 from '../../assets/img3.jpg'
+import img3 from '../../assets/img10.jpg'
+import img4 from '../../assets/img12.jpg'
+import img5 from '../../assets/img11.jpg'
 
 
 
@@ -46,6 +51,8 @@ const PartTwo=()=>{
     
     
     }
+
+    
     
     useEffect(()=>{
         const interval=setInterval(()=>{
@@ -62,15 +69,42 @@ const PartTwo=()=>{
        },[count])
 
 
+     const All=(props)=>{
+        return(
+            <Box sx={{backgroundImage:`url(${props.image})`,
+                     backgroundRepeat:"no-repeat",
+                     backgroundSize:'cover',
+                    height:400}}
+                > 
+                  <h1>{props.title}</h1>
+                  <h3>{props.heading}</h3>
+                  <p>
+                    {props.explanation} 
+                  </p>
+                <Button variant='contained'>Read More...</Button>  
 
+            </Box>
+        )
+        
+     }
 
        return(
-        <Box>
-           <div>PartTwo  is {count}</div> 
-            <div>
-                 {(count % 2 ===0)  && <One />}
-                 { (count % 2 ==!0)  && <Two />}
-                 </div>
+        <Box >
+           {/* <div>PartTwo  is {count}</div>  */}
+                 {(count ===0)  && <All 
+                 title='semen mountain'
+                 image={img1}
+                 heading='some mountain really amazing here '
+                 explanation='ome mountain really amazingome mountain really amazingome mountain really amazingome mountain really amazing'
+                  />}
+                 { (count  ===1)  && <Two />}
+                 { (count  ===2)  && <Three />}
+                 { (count  ===3)  && <Four />}
+                 { (count  ===4)  && <Five />}
+                 { (count  ===5)  && <Five />}
+
+
+                
        </Box>
     )
 }
