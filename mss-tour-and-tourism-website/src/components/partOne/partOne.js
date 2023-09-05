@@ -1,6 +1,7 @@
 
 
 import React from "react";
+
 import Cardd from "../card/card";
 import { Stack ,Box} from "@mui/material";
 import img2 from '../../assets/img2.jpg'

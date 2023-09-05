@@ -12,7 +12,7 @@ const Navbar=()=>{
     const age=''
     return(
           <Grid container 
-          // sx={{ borderBottom: 1  }}
+          sx={{ boxShadow: 4   }}
           >
 
             <Grid item  lg={4}  sx={{ }}>

@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Stack } from "@mui/material";
 import  React ,{ useState, useEffect } from "react";
 
 import img1 from '../../assets/img2.jpg'
@@ -10,102 +10,67 @@ import img5 from '../../assets/img11.jpg'
 
 
 const PartTwo=()=>{
-    const [count, setCount]=useState(0)
-    const [timer,setTimer]=[1,2,3,4,5]
-    const One=()=>{
-        return( 
-            <h1> one </h1>
-        )
-    
-    
+   
+    const [count,setCount]=useState(1)
+    const Places=(props)=>{
+      return(
+        <div> <Box> <img src={img3}/></Box>
+        <Box> 
+          <h1> lalibela church</h1>
+          <p1>Nestled in the highlands of northern Ethiopia you
+             will find the spectacular Simien Mountains. 
+             This jewel of an area makes you feel lost in time 
+             with its remarkable rock-hewn churches and medieval castles.
+              These majestic mountains seemed to have been hand-shaped by
+               nature and are home to a rich cultural heritage. 
+               They now draw people here to learn about ancient religious sites 
+               and to witness the jagged peaks and seemingly endless vistas. 
+               .</p1>
+        </Box></div>
+      )
     }
-    
-    const Two=()=>{
-        return( 
-            <h1> two </h1>
-        )
-    
-    
-    }
-    
-   const Three=()=>{
-        return( 
-            <h1> three </h1>
-        )
-    
-    
-    }
-    
-     const Four=()=>{
-        return( 
-            <h1> four </h1>
-        )
-    
-    
-    }
-    
-    const Five=()=>{
-        return( 
-            <h1> five </h1>
-        )
-    
-    
-    }
-
-    
-    
     useEffect(()=>{
-        const interval=setInterval(()=>{
-            
-           
-           setCount(count + 1)
-           if (count ===5) setCount(0)
 
+         const interval=setInterval(()=>{
+          setCount(count +1)
+          if (count===10) setCount(1)
+             
+         },1000)
+         return ()=>clearInterval(interval)
 
-        },2000)
-
-        return ()=>clearInterval(interval)
-
-       },[count])
-
-
-     const All=(props)=>{
-        return(
-            <Box sx={{backgroundImage:`url(${props.image})`,
-                     backgroundRepeat:"no-repeat",
-                     backgroundSize:'cover',
-                    height:400}}
-                > 
-                  <h1>{props.title}</h1>
-                  <h3>{props.heading}</h3>
-                  <p>
-                    {props.explanation} 
-                  </p>
-                <Button variant='contained'>Read More...</Button>  
-
-            </Box>
-        )
-        
-     }
+    },[count])
+    
+      
 
        return(
-        <Box >
-           {/* <div>PartTwo  is {count}</div>  */}
-                 {(count ===0)  && <All 
-                 title='semen mountain'
-                 image={img1}
-                 heading='some mountain really amazing here '
-                 explanation='ome mountain really amazingome mountain really amazingome mountain really amazingome mountain really amazing'
-                  />}
-                 { (count  ===1)  && <Two />}
-                 { (count  ===2)  && <Three />}
-                 { (count  ===3)  && <Four />}
-                 { (count  ===4)  && <Five />}
-                 { (count  ===5)  && <Five />}
+        <Stack
+         sx={{ height:650,
+         backgroundColor:'#0a0a0a',
+         opacity: 0.9,
+         color:'white',
+         boxShadow:4,
+        //  display:'flex',
+         direction:'column',
+         textAlign: 'center',
+         marginLeft:'20px',
+         marginRight:'20px',
+         padding:'20px'
 
-
-                
-       </Box>
+        }}>
+          <h1 > origin of man ethiopia</h1>
+          <p style={{ fontSize:'30px' }}>Ethiopia, in the Horn of Africa, is 
+            a rugged, landlocked country split by the 
+            Great Rift Valley. With archaeological finds dating back more 
+            than 3 million years, it's a place of ancient culture. Among its important 
+            sites are Lalibela with its rock-cut Christian churches from the 12th-13th centuries. 
+            Aksum is the ruins of an ancient city with
+             obelisks, tombs, castles and Our Lady Mary of Zion church.
+          </p>
+          <Box>
+           
+          </Box>
+        </Stack>
+       
     )
 }
 
