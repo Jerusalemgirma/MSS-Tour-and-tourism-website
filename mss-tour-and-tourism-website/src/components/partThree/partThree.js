@@ -14,13 +14,27 @@ const PartThree=()=>{
    
 
        return(
-        <Stack direction='column' pl={12} pr={12} spacing={2}>
+        <Stack direction='column' pl={12} pr={12} spacing={2} sx={{ color:'white' }}>
 
          <Stack  direction='row' spacing={2} sx={{ marginLeft:15 }}>
            <ButtonBase>
-             <Box sx={{ width:753,height:380, border:0.5 , borderRadius:'5%'}}>
-                <img src={img1} style={{width:753, height:380, border:0.5 , borderRadius:'5%' }}/>
-                <h1  style={{ position:'relative',bottom:400}}>Sheraton Hotel</h1>
+             <Box sx={{ width:753,height:380, border:0.5 , borderRadius:'5%',
+              '&:hover': {
+                 boxShadow:6,
+                border:2,
+                borderColor:'red'
+               },
+        }}>
+                <img src={img1} style={{width:753, height:380, border:0.5 , borderRadius:'5%',
+                '&:hover': {
+                  boxShadow:6,
+                 border:2,
+                 borderColor:'red'
+
+
+                },
+               }}/>
+                <h1  style={{ position:'relative',bottom:380}}>Sheraton Hotel</h1>
 
              </Box>
             </ButtonBase>
