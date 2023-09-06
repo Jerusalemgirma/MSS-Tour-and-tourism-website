@@ -1,12 +1,8 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Grid, Stack } from "@mui/material";
 import  React ,{ useState, useEffect } from "react";
 
-import img1 from '../../assets/img2.jpg'
-import img2 from '../../assets/img3.jpg'
-import img3 from '../../assets/img10.jpg'
-import img4 from '../../assets/img12.jpg'
-import img5 from '../../assets/img11.jpg'
 
+import img1 from '../../assets/hotels/sheraton.jpg'
 
 
 const PartThree=()=>{
@@ -17,9 +13,47 @@ const PartThree=()=>{
    
 
        return(
-        <div>
-          part three
-        </div>
+        <Stack direction='column' pl={12} pr={12} spacing={2}>
+
+         <Stack  direction='row' spacing={2} sx={{ marginLeft:15 }}>
+            <Box sx={{ width:753,height:380, border:0.5 , borderRadius:'5%'}}>
+                <img src={img1} style={{width:753, height:380, border:0.5 , borderRadius:'5%' }}/>
+                <h1  style={{ position:'relative',bottom:400,left:330}}>Sheraton Hotel</h1>
+
+            </Box>
+
+            <Box sx={{ width:754,height:380, border:0.5 , borderRadius:'5%'}}>
+                <img src={img1} style={{width:754, height:380, border:0.5 , borderRadius:'5%' }}/>
+                <h1  style={{ position:'relative',bottom:400,left:330}}>Sheraton Hotel</h1>
+
+            </Box> 
+         </Stack>
+
+         <Stack direction='row' spacing={2} >
+           <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%'}}>
+                <img src={img1} style={{width:500, height:400, border:0.5 , borderRadius:'5%' }}/>
+                <h1  style={{ position:'relative',bottom:400,left:330}}>Sheraton Hotel</h1>
+
+            </Box>
+            <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%'}}>
+                <img src={img1} style={{width:500, height:400, border:0.5 , borderRadius:'5%' }}/>
+                <h1  style={{ position:'relative',bottom:400,left:330}}>Sheraton Hotel</h1>
+
+            </Box>
+            <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%'}}>
+                <img src={img1} style={{width:500, height:400, border:0.5 , borderRadius:'5%' }}/>
+                <h1  style={{ position:'relative',bottom:400,left:330}}>Sheraton Hotel</h1>
+
+            </Box>
+            
+         </Stack>
+
+         <Box>
+            <Box></Box>
+            <Box></Box>
+         </Box>
+
+        </Stack>
        
     ) 
 }
