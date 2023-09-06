@@ -4,16 +4,16 @@ import  React ,{ useState, useEffect } from "react";
 
 
 
-import img1 from '../../assets/semenM.jpeg'
-import img2 from '../../assets/lalibela.jpg'
-import img3 from '../../assets/addisabeba.jpg'
-import img4 from '../../assets/axum.jpeg'
-import img5 from '../../assets/blueNile.jpg'
-import img6 from '../../assets/ertale.webp'
-import  img7 from '../../assets/gonder.jpg'
-import img8 from '../../assets/hamer.jpg'
-import img9 from '../../assets/harer.jpg'
-import img10 from '../../assets/ArbaMinch.jpeg'
+import img1 from '../../assets/places/semenM.jpeg'
+import img2 from '../../assets/places/lalibela.jpg'
+import img3 from '../../assets/places/addisabeba.jpg'
+import img4 from '../../assets/places/axum.jpeg'
+import img5 from '../../assets/places/blueNile.jpg'
+import img6 from '../../assets/places/ertale.webp'
+import  img7 from '../../assets/places/gonder.jpg'
+import img8 from '../../assets/places/hamer.jpg'
+import img9 from '../../assets/places/harer.jpg'
+import img10 from '../../assets/places/ArbaMinch.jpeg'
 
 
 const PartTwo=()=>{
