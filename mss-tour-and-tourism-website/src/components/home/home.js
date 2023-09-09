@@ -8,7 +8,7 @@ import PartOne from "../partOne/partOne"
 import PartTwo from "../partTwo/partTwo"
 import PartThree from '../partThree/partThree'
 import PartFour from "../partFour/partFour"
-
+import PartFive from "../partFive/partFive"
 const Home=()=>{
     return(
         <Box>
@@ -19,7 +19,7 @@ const Home=()=>{
               <Grid item sx={{ color:'black' }}><PartTwo /></Grid>
               <Grid item sx={{ color:'black' }}><PartThree /></Grid>
               <Grid item sx={{ color:'black' }}><PartFour /></Grid>
-              <Grid item sx={{ color:'black' }}>7</Grid>
+              <Grid item sx={{ color:'black' }}>< PartFive /></Grid>
               <Grid item sx={{ color:'black' }}>8</Grid>
               <Grid item sx={{ color:'black' }}>9</Grid>
               <Grid item sx={{ color:'black' }}>10</Grid>
