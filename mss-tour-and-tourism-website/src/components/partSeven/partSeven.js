@@ -14,22 +14,22 @@ const PartSeven=()=>{
 
     const Cardd=(props)=>{
         return(
-            <Stack direction='row'   p={3} sx={{  boxShadow:4 }}>
+            <Stack direction='row'   p={3} sx={{boxShadow:4,backgroundColor:'#EBF5F6' }} >
               <Box  sx={{ textAlign:"center"}}>
                 
                     <h1>{props.name}</h1>
-                    <h6>{props.location}</h6>
+                    <h6 style={{ fontSize:20 }}>{props.location}</h6>
                     <p style={{ marginBottom:250 ,fontSize:30,marginLeft:30,marginRight:30}}>{props.detail}</p>
                   <Stack direction='row' spacing={1}>
                     <img src={props.image5} style={{ width:270,height:240 }}/>
                     <img src={props.image3 } style={{ width:270,height:240 }}/>
                     <img src={props.image4} style={{ width:270,height:240 }}/>
-                    <img src={props.image2} style={{ width:270,height:240,marginLeft:1 }}/>
+                    <img src={props.image2} style={{ width:270,height:240}}/>
                  </Stack>
              </Box>
 
             <Box sx={{ width:650 }}>
-             <img src={props.image1} style={{ width:650 ,height:790}}/>
+             <img src={props.image1} style={{ width:640 ,height:790}}/>
             </Box>
 
         </Stack>
