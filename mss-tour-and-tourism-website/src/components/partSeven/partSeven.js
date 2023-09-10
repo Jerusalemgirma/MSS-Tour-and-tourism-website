@@ -19,7 +19,7 @@ const PartSeven=()=>{
                 
                     <h1>{props.name}</h1>
                     <h6 style={{ fontSize:20 }}>{props.location}</h6>
-                    <p style={{ marginBottom:250 ,fontSize:30,marginLeft:30,marginRight:30}}>{props.detail}</p>
+                    <p style={{ marginBottom:203 ,fontSize:30,marginLeft:30,marginRight:30}}>{props.detail}</p>
                   <Stack direction='row' spacing={1}>
                     <img src={props.image5} style={{ width:270,height:240 }}/>
                     <img src={props.image3 } style={{ width:270,height:240 }}/>
@@ -29,7 +29,7 @@ const PartSeven=()=>{
              </Box>
 
             <Box sx={{ width:650 }}>
-             <img src={props.image1} style={{ width:640 ,height:790}}/>
+             <img src={props.image1} style={{ width:640 ,height:800}}/>
             </Box>
 
         </Stack>
