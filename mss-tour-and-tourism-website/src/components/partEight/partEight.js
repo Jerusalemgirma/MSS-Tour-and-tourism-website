@@ -1,11 +1,7 @@
 
 
 import { Grid,Box, Stack } from "@mui/material";
-import React, { useState } from "react";
-import { useEffect } from "react";
-
-
-
+import React from "react";
 
 import img1 from '../../assets/unesico/aksum1.jpg'
 import img2 from '../../assets/unesico/aksum2.jpg'
@@ -13,28 +9,15 @@ import img3 from '../../assets/unesico/aksum3.jpg'
 import img4 from '../../assets/unesico/aksum4.jpg'
 import img5 from '../../assets/unesico/aksum5.jpg'
 
-import img6 from '../../assets/unesico/fasil1.jpg'
-import img7 from '../../assets/unesico/fasil2.jpg'
-import img8 from '../../assets/unesico/fasil3.jpg'
-import img9 from '../../assets/unesico/fasil4.jpg'
-import img10 from '../../assets/unesico/fasil5.jpg'
 
-
-
-const PartSeven=()=>{
-    const [count,setCount]=useState(1)
-    useEffect(()=>{
-        const interval=setInterval(()=>{
-            setCount(count+1)
-            if(count===9) setCount(1)
-        },2000)
-
-        return ()=>clearInterval(interval)
-    },[count])
+const PartEight=()=>{
 
     const Cardd=(props)=>{
         return(
             <Stack direction='row'   p={3} sx={{boxShadow:4,backgroundColor:'#EBF5F6' }} >
+              <Box sx={{ width:650 }}>
+                  <img src={props.image1} style={{ width:640 ,height:800}}/>
+              </Box>
               <Box  sx={{ textAlign:"center"}}>
                 
                     <h1>{props.name}</h1>
@@ -48,17 +31,15 @@ const PartSeven=()=>{
                  </Stack>
              </Box>
 
-            <Box sx={{ width:650 }}>
-             <img src={props.image1} style={{ width:640 ,height:800}}/>
-            </Box>
+          
 
         </Stack>
 
     )}
     return(
         <Box >
-        <h1> Ethiopia has many unesico registerd heritage</h1>
-       { (count===1 )&& <Cardd 
+        <h1> Ethiopia has many unesico registerd Events and holiday</h1>
+        <Cardd 
            name='Aksum'
            location='Around Tigray, Ethiopia'
            detail="Aksum is a city in northern Ethiopia. 
@@ -74,10 +55,10 @@ const PartSeven=()=>{
             image5={img5}
 
         />
-       }
+
         </Box>
     )
 
 }
 
-export default PartSeven
+export default PartEight

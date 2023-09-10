@@ -11,6 +11,7 @@ import PartFour from "../partFour/partFour"
 import PartFive from "../partFive/partFive"
 import PartSix from "../partSix/partSix"
 import PartSeven from "../partSeven/partSeven"
+import PartEight from "../partEight/partEight"
 const Home=()=>{
     return(
         <Box>
@@ -24,7 +25,7 @@ const Home=()=>{
               <Grid item sx={{ color:'black' }}>< PartFive /></Grid>
               <Grid item sx={{ color:'black' }}><PartSix /></Grid>
               <Grid item sx={{ color:'black' }}>< PartSeven/></Grid>
-              <Grid item sx={{ color:'black' }}>10</Grid>
+              <Grid item sx={{ color:'black' }}> <PartEight/></Grid>
 
            </Grid>
         </Box>
