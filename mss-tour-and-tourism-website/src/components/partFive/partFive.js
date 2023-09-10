@@ -28,7 +28,7 @@ const PartFive=()=>{
     const FoodCard=(props)=>{
         return(
         <Stack >
-            <Box>
+            <Box sx={{ boxShadow:5,marginBottom:5 }}>
               <Grid container>
                 <Grid item lg={6} xl={6} md={6} sm={6} xs={6} >
                    <Box  >
