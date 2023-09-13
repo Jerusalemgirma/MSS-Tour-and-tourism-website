@@ -10,25 +10,25 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img from '../../assets/img1.png'
+import ButtonBase from '@material-ui/core/ButtonBase';
 
-
-  const Cardd=({imagee})=>{
+  const Cardd=(props)=>{
      return(
         <div>
-            <Card sx={{  }}>
+          <ButtonBase>
+            <Card sx={{ boxShadow:3 }}>
              <CardMedia
                sx={{ height: 250 }}
-               image={imagee}
+               image={props.imagee}
               title="green iguana"
             />
 
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
+             {props.title} 
+             </Typography>
             <Typography variant="body2" color="text.secondary">
-               Lizards are a widespread group of squamate reptiles, with over 6,000
-               species, ranging across all continents except Antarctica
+               {props.explanation}
            </Typography>
          </CardContent>
 
@@ -37,6 +37,7 @@ import img from '../../assets/img1.png'
            <Button size="small">Share</Button>
         </CardActions>
     </Card>
+    </ButtonBase>
         </div>
     )
 }

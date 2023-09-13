@@ -28,7 +28,12 @@ const PartOne=()=>{
          {
             pics.map((e)=>(
                 
-               <Box><Cardd imagee={e}/></Box>
+               <Box>
+                
+                <Cardd imagee={e}
+                           title='Ethiopia'
+                           explanation='EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia
+                           EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia'/></Box>
              ))
          
           }
@@ -37,7 +42,10 @@ const PartOne=()=>{
          {
              pics2.map((e)=>(
                 
-                <Box><Cardd imagee={e}/></Box>
+                <Box><Cardd imagee={e}
+                title='Ethiopia'
+                explanation='EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia
+                           EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia'/></Box>
               ))
          
           }

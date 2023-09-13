@@ -19,11 +19,11 @@ const HeadingOne=()=>{
          >
             <Box  ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1> </Box>      <Divider orientation="vertical" flexItem />
 
-            <Box><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box> <Divider orientation="vertical" flexItem />
+            <Box><h1 style={{ fontSize:'30px' }}><b >park</b></h1></Box> <Divider orientation="vertical" flexItem />
 
-            <Box ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box>  <Divider orientation="vertical" flexItem />
+            <Box ><h1 style={{ fontSize:'30px' }}><b >museam</b></h1></Box>  <Divider orientation="vertical" flexItem />
 
-            <Box  ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box><Divider orientation="vertical" flexItem />
+            <Box  ><h1 style={{ fontSize:'30px' }}><b >holiday</b></h1></Box><Divider orientation="vertical" flexItem />
             <Box  ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box><Divider orientation="vertical" flexItem />
             <Box  ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box><Divider orientation="vertical" flexItem />
             <Box  ><h1 style={{ fontSize:'30px' }}><b >hotel</b></h1></Box><Divider orientation="vertical" flexItem />
