@@ -1,7 +1,7 @@
 
 
 import { Grid,Box, Stack } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -35,6 +35,19 @@ import img20 from '../../assets/unesico/geda5.jpg'
 
 const PartEight=()=>{
     const [count,setCount]=useState(1)
+    const [tall,setTall]=useState(850)
+    // useEffect(()=>{
+    //     if (count ===2) {
+    //         setTall(760)
+    //     } else if(count===3){
+    //         setTall(760)
+    //     }else if(count===4){
+    //         setTall(760)
+    //     }else{
+    //         setTall(845)
+    //     }
+
+    // },[count])
     const add=()=>{
         if(count===4){
             setCount(4)
@@ -46,28 +59,30 @@ const PartEight=()=>{
             setCount(1)
         }else{setCount(count-1)}
     }
+
+   
+   
     const Cardd=(props)=>{
        
 
         return(
-            <Stack direction='row'   p={2} sx={{boxShadow:4,backgroundColor:'#F3F7F9' }} >
+            <Stack direction='row' p={2} sx={{boxShadow:4,backgroundColor:'#F3F7F9' }} >
               <Box sx={{ width:650,marginRight:2 }}>
-                  <img src={props.image1} style={{ width:635 ,height:755}}/>
+                  <img src={props.image1} style={{ width:635 ,height:835}}/>
               </Box>
               <Box  sx={{ textAlign:"center"}}>
-                
                     <h1>{props.name}</h1>
                     <h6 style={{ fontSize:20 }}>{props.location}</h6>
-                    <p style={{ fontSize:30,marginLeft:30,marginRight:30,marginBottom:128}}>{props.detail}</p>
-                    <Stack   direction='row' ml={60} pl={7} sx={{ boxShadow:3 ,width:160 }}> 
-                     <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:2}}><ArrowBackIosIcon /></Box></ButtonBase> 
-                     <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:2}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
+                    <p style={{ fontSize:30,marginLeft:30,marginRight:30,marginBottom:108}}>{props.detail}</p>
+                    <Stack  direction='row' ml={60} pl={7} sx={{ boxShadow:3 ,width:160 }}> 
+                     <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
+                     <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
                     </Stack>
                   <Stack direction='row' spacing={1} >
-                    <img src={props.image5} style={{ width:265,height:240 }}/>
-                    <img src={props.image3 } style={{ width:270,height:240 }}/>
-                    <img src={props.image4} style={{ width:270,height:240 }}/>
-                    <img src={props.image2} style={{ width:270,height:240}}/>
+                    <img src={props.image5} style={{ width:265,height:210 }}/>
+                    <img src={props.image3 } style={{ width:270,height:210 }}/>
+                    <img src={props.image4} style={{ width:270,height:210 }}/>
+                    <img src={props.image2} style={{ width:270,height:210}}/>
                  </Stack>
              </Box>
 
