@@ -47,7 +47,7 @@ const PartEleven=()=>{
             },
         }}> 
             <img src={props.imagee} style={{ width:308,height:360 , border:1,borderRadius:'5%',}}/>
-            <h2>{props.title} </h2>
+            <h2 style={{ paddingTop:15 }}> {props.title} </h2>
             {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
@@ -60,7 +60,7 @@ const PartEleven=()=>{
          {
             (count===1) &&<Stack direction='column'>
 
-                <Stack direction='row' spacing={2}>
+                <Stack direction='row' spacing={3}>
                      < Cardd imagee={img1}
                                 title='Bale Mountains National Park'
                     />
