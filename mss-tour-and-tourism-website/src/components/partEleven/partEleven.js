@@ -22,7 +22,7 @@ import img2 from '../../assets/park/Gambella National Park.avif'
 import img3 from '../../assets/park/Mago National Park.jpg'
 import img4 from '../../assets/park/Abijatta-Shalla National Park.jpg'
 import img5 from '../../assets/park/Simien Mountains National Park.jpg'
-import img6 from '../../assets/park/Nech Sar National Park.jpg'
+import img6 from '../../assets/park/Nech Sar National Park.webp'
 import img7 from '../../assets/park/Yangudi Rassa National Park.jpg'
 import img8 from '../../assets/park/Maze National Park.jpg'
 import img9 from '../../assets/park/Awash National Park.jpg'
@@ -39,14 +39,14 @@ const PartEleven=()=>{
         const Cardd=(props)=>{
         return(
         <ButtonBase>
-          <Box sx={{ border:1,borderRadius:'5%', boxShadow:4,
+          <Box sx={{ border:1,borderRadius:'5%', width:310,height:480,boxShadow:4,
             '&:hover': {
-              boxShadow:6,
+              boxShadow:8,
               border:2,
               borderColor:'red'
             },
         }}> 
-            <img src={props.imagee}/>
+            <img src={props.imagee} style={{ width:308,height:360 , border:1,borderRadius:'5%',}}/>
             <h2>{props.title} </h2>
             {/* <p> {props.explanation}</p> */}
         </Box>
@@ -54,13 +54,13 @@ const PartEleven=()=>{
         )
     }
     return(
-        <Box>
+        <Box p={2}>
 
         
          {
             (count===1) &&<Stack direction='column'>
 
-                <Stack direction='row'>
+                <Stack direction='row' spacing={2}>
                      < Cardd imagee={img1}
                                 title='Bale Mountains National Park'
                     />
@@ -75,9 +75,7 @@ const PartEleven=()=>{
                  < Cardd imagee={img5}
                                 title='Simien Mountains National Park'
                 />
-                < Cardd imagee={img11}
-                                title='Kafta Sheraro National Park'
-                />
+               
                 </Stack>
                 <Stack direction='row'>
                      < Cardd imagee={img6}
@@ -94,13 +92,23 @@ const PartEleven=()=>{
                  < Cardd imagee={img10}
                                 title='Omo National Park'
                 />
+                
+                </Stack>
+
+                <Stack>
+
+                </Stack>
                 < Cardd imagee={img12}
                                 title='Geraille National Park'
                 />
-                </Stack>
-
+                 < Cardd imagee={img11}
+                                title='Kafta Sheraro National Park'
+                />
                 </Stack>
                       }
         </Box>
     )
 }
+
+
+export default  PartEleven

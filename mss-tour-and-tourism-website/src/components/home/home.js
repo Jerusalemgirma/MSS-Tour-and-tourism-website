@@ -14,23 +14,26 @@ import PartSeven from "../partSeven/partSeven"
 import PartEight from "../partEight/partEight"
 import PartNine from "../partNine/partNine"
 import PartTen from "../partTen/partTen"
+import PartEleven from "../partEleven/partEleven"
 
 const Home=()=>{
     return(
         <Box>
            <Grid container direction='column' spacing={6}>
-              <Grid item sx={{ color:'black' }} ><Navbar /></Grid>
-              <Grid item sx={{ color:'black' }}><HeadingOne /></Grid>
+              <Grid item sx={{  }} ><Navbar /></Grid>
+              <Grid item sx={{  }}><HeadingOne /></Grid>
               <Grid item sx={{ }}> <PartOne /> </Grid>
-              <Grid item sx={{ color:'black' }}><PartTwo /></Grid>
-              <Grid item sx={{ color:'black' }}><PartThree /></Grid>
-              <Grid item sx={{ color:'black' }}><PartFour /></Grid>
-              <Grid item sx={{ color:'black' }}>< PartFive /></Grid>
-              <Grid item sx={{ color:'black' }}><PartSix /></Grid>
-              <Grid item sx={{ color:'black' }}>< PartSeven/></Grid>
-              <Grid item sx={{ color:'black' }}> <PartEight/></Grid>
-              <Grid item sx={{ color:'black' }}> <PartNine /></Grid>
+              <Grid item sx={{ }}><PartTwo /></Grid>
+              <Grid item sx={{  }}><PartThree /></Grid>
+              <Grid item sx={{ }}><PartFour /></Grid>
+              <Grid item sx={{  }}>< PartFive /></Grid>
+              <Grid item sx={{  }}><PartSix /></Grid>
+              <Grid item sx={{  }}>< PartSeven/></Grid>
+              <Grid item sx={{  }}> <PartEight/></Grid>
+              <Grid item sx={{ }}> <PartNine /></Grid>
               <Grid item sx={{ }}> <PartTen /> </Grid>
+              <Grid item sx={{ }}> <PartEleven /> </Grid>
+
            </Grid>
         </Box>
     )
