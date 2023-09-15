@@ -55,12 +55,12 @@ const PartEleven=()=>{
     }
     return(
         <Box p={2}>
-
+       <h1> some parks in ethiopia which contain alot life</h1>
         
          {
-            (count===1) &&<Stack direction='column'>
+            (count===1) && <Stack direction='column' spacing={1} pl={5}>
 
-                <Stack direction='row' spacing={3}>
+                <Stack direction='row' spacing={3} >
                      < Cardd imagee={img1}
                                 title='Bale Mountains National Park'
                     />
@@ -77,7 +77,8 @@ const PartEleven=()=>{
                 />
                
                 </Stack>
-                <Stack direction='row'>
+
+                <Stack direction='row' spacing={3}>
                      < Cardd imagee={img6}
                                 title='Nech Sar National Park'
                     />
@@ -95,15 +96,20 @@ const PartEleven=()=>{
                 
                 </Stack>
 
-                <Stack>
 
-                </Stack>
+
+
+                <Stack direction='row' spacing={3}>
                 < Cardd imagee={img12}
                                 title='Geraille National Park'
                 />
                  < Cardd imagee={img11}
                                 title='Kafta Sheraro National Park'
                 />
+                </Stack>
+
+
+               
                 </Stack>
                       }
         </Box>
