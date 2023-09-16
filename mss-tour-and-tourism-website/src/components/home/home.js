@@ -15,7 +15,7 @@ import PartEight from "../partEight/partEight"
 import PartNine from "../partNine/partNine"
 import PartTen from "../partTen/partTen"
 import PartEleven from "../partEleven/partEleven"
-
+import PartTwelve from "../partTwelve/partTwelve"
 const Home=()=>{
     return(
         <Box>
