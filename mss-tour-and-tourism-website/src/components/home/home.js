@@ -28,11 +28,14 @@ const Home=()=>{
               <Grid item sx={{ }}><PartFour /></Grid>
               <Grid item sx={{  }}>< PartFive /></Grid>
               <Grid item sx={{  }}><PartSix /></Grid>
+              <Grid item sx={{ }}> <PartTwelve /> </Grid>
               <Grid item sx={{  }}>< PartSeven/></Grid>
               <Grid item sx={{  }}> <PartEight/></Grid>
               <Grid item sx={{ }}> <PartNine /></Grid>
               <Grid item sx={{ }}> <PartTen /> </Grid>
               <Grid item sx={{ }}> <PartEleven /> </Grid>
+              {/* <Grid item sx={{ }}> <PartTwelve /> </Grid> */}
+
 
            </Grid>
         </Box>

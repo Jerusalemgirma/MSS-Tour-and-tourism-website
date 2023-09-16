@@ -45,19 +45,7 @@ const PartTwelve=()=>{
 
         <Box p={2}>
         <h1> Some Museum in Ethiopia which </h1>
-//National Museum of Ethiopia
-//Rock-Hewn Churches, Lalibela
-//Rimbauds House & Museum.webp
-//science museum .jpeg
-//Unity Park
-//Red Terror Martyrs' Memorial Museum
-//The Africa Unbound Museum
-//The Coffee Gallery
-//Ethnological Museum
-//The Zoological Natural History Museum
-//Addis Ababa Museum  Meskel Square 
-//Modern Art Museum
-//Zoma Museum Mekanisa
+
          
           <Stack direction='column' spacing={1} pl={5}>
  
