@@ -34,7 +34,7 @@ import img12 from '../../assets/park/Geraille National Park.jpg'
 
 const PartEleven=()=>{
 
-    const [count,setCount]=useState(1)
+    // const [count,setCount]=useState(1)
 
         const Cardd=(props)=>{
         return(
@@ -57,8 +57,7 @@ const PartEleven=()=>{
         <Box p={2}>
        <h1> some parks in ethiopia which contain alot life</h1>
         
-         {
-            (count===1) && <Stack direction='column' spacing={1} pl={5}>
+         <Stack direction='column' spacing={1} pl={5}>
 
                 <Stack direction='row' spacing={3} >
                      < Cardd imagee={img1}
@@ -111,7 +110,7 @@ const PartEleven=()=>{
 
                
                 </Stack>
-                      }
+                      
         </Box>
     )
 }
