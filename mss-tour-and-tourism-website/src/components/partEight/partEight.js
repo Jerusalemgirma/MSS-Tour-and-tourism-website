@@ -93,7 +93,20 @@ const PartEight=()=>{
     )}
     return(
         <Box >
+            <Box pb={4}pl={11} pr={17} sx={{ backgroundColor:'#d6e5de',fontSize:25 }}>
+                <h1 style={{ textAlign:'center' }}> Ethiopia’s Festivals and Celebrations</h1>
+                <p>
+                 Celebrations in Ethiopia are great and colorful events, mostly religious, and frequently take place over several days. Important Christian holidays include Meskel, Christmas, Timkat, Kiddus Yohannes and Easter. Timkat, which marks Christ's baptism, is the most colorful event of the year.  In September, the two-day feast of Meskal marks the finding of the True Cross.  Kiddus Yohannes, New Year's Day comes on September 11, which coincides with the end of the season of heavy rains and the beginning of spring. 
+                  ​Muslim holidays are based on the lunar calendar and fall at different times each year. The ninth month of the Muslim calendar is devoted to Ramadan, which is marked by fasting. One of the great Muslim feasts of the year is 'Id Al Fatr, which celebrates the end of Ramadan. The 'Id al Adha is the feast marking Abraham's willingness to sacrifice Isaac as commanded by God.  On these days, after praying and listening to the imam (religious leader), Muslim Ethiopians sacrifice animals and distribute part of the meat to the poor. Wearing new clothes, they visit friends and relatives as well as family graves.  Horse races are also traditional on these days.  Muslims celebrate the Prophet Mohammed's birthday on September 20 and mark the anniversaries of numerous martyrs.
+                <b style={{ fontSize:30 }}>some events are even registerd on unesico</b>
+                
+                </p>
+            </Box>
         <h1> Ethiopia has also unesico registerd  intangible heritages</h1>
+        <p>
+        {/* Celebrations in Ethiopia are great and colorful events, mostly religious, and frequently take place over several days. */}
+        
+        </p>
         { (count===3) && <Cardd 
            name='Meskel (Commemoration feast of the finding of the True Holy Cross of Christ)'
            location='Christian holiday in the Ethiopian Orthodox, Ethiopia'
