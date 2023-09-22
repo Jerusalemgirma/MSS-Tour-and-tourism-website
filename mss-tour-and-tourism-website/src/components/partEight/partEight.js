@@ -35,19 +35,7 @@ import img20 from '../../assets/unesico/geda5.jpg'
 
 const PartEight=()=>{
     const [count,setCount]=useState(1)
-    const [tall,setTall]=useState(850)
-    // useEffect(()=>{
-    //     if (count ===2) {
-    //         setTall(760)
-    //     } else if(count===3){
-    //         setTall(760)
-    //     }else if(count===4){
-    //         setTall(760)
-    //     }else{
-    //         setTall(845)
-    //     }
-
-    // },[count])
+   
     const add=()=>{
         if(count===4){
             setCount(4)
@@ -165,3 +153,6 @@ const PartEight=()=>{
 }
 
 export default PartEight
+
+
+
