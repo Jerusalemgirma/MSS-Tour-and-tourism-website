@@ -24,7 +24,7 @@ const PartFifteen=()=>{
 
     return(
     <Stack spacing={5} mt={6}>
-        <h1></h1>
+        <h1>More places to visit...</h1>
         <Stack direction='row' spacing={3}>
          {
             pics.map((e)=>(
