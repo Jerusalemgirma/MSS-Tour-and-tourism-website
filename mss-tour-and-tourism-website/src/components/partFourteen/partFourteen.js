@@ -108,19 +108,35 @@ const PartFourteen=()=>{
 
             </h2>
         </Stack>
-        <h1> Some nationalities listed below</h1>
-       { (count ===1) && <Stack direction='column' spacing={1} borderRadius='7%'>
+        <h1> Some nationalities are listed below...</h1>
+       { (count ===1) && <Stack direction='column' spacing={1} borderRadius='7%' pl={7}>
         <Stack direction='row' spacing={1}> 
           <One imagee={img1} title='Afar'/>
           <Two imagee={img2} title='Amhara'/>
           <One imagee={img3} title='Argoba'/>
           <Two imagee={img4} title='Awii'/>
           <One imagee={img5} title='Basketo'/>
-
+        </Stack>
+        <Stack direction='row' spacing={1}> 
+          <One imagee={img6} title='Burji'/>
+          <Two imagee={img7} title='Dawro'/>
+          <One imagee={img8} title='Gamo'/>
+          <Two imagee={img9} title='Gedeo'/>
+          <One imagee={img10} title='Goffa'/>
+        </Stack> <Stack direction='row' spacing={1}> 
+          <One imagee={img11} title='Gumuz'/>
+          <Two imagee={img12} title='Gurage'/>
+          <One imagee={img13} title='Hadya'/>
+          <Two imagee={img14} title='Halaba'/>
+          <One imagee={img15} title='Hamar'/>
         </Stack>
     </Stack>
      }
      {(count ===2) && <></>} 
+     <Stack  direction='row' ml={90} pl={7} sx={{ boxShadow:3 ,width:160 }} mt={5}> 
+                        <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
+                        <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
+    </Stack>
     </Box>
 )}
 
