@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useState } from "react";
 import { Box,Stack } from "@mui/material";
 
 //afar
@@ -45,12 +45,17 @@ import img25 from '../../assets/nations/somali.jpg'
 import img26 from '../../assets/nations/welayta.jpg'
 
 
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 
 
 
 
 const Fourteen=()=>{
+    const [count,setCount]=useState(1)
+
     const One=(props)=>{
         return(
         <Box sx={{ borderRadius:'5%',  }}>
@@ -69,6 +74,18 @@ const Fourteen=()=>{
         </Box>
         )
     }
+    const add=()=>{
+        if(count===2){
+            setCount(2)
+        }else{
+            setCount(count+1)}
+    }
+    const minus=()=>{
+        if(count===1){
+            setCount(1)
+        }else{setCount(count-1)}
+    }
+
     return(
     <Box>
        <Stack direction='column' spacing={1} borderRadius='7%'>
