@@ -109,7 +109,8 @@ const PartFourteen=()=>{
             </h2>
         </Stack>
         <h1> Some nationalities are listed below...</h1>
-       { (count ===1) && <Stack direction='column' spacing={1} borderRadius='7%' pl={7}>
+       { (count ===1) && 
+       <Stack direction='column' spacing={1} borderRadius='7%' pl={7}>
         <Stack direction='row' spacing={1}> 
           <One imagee={img1} title='Afar'/>
           <Two imagee={img2} title='Amhara'/>
@@ -132,7 +133,30 @@ const PartFourteen=()=>{
         </Stack>
     </Stack>
      }
-     {(count ===2) && <></>} 
+     {(count ===2) &&
+      <Stack direction='column' spacing={1} borderRadius='7%' pl={7}>
+      <Stack direction='row' spacing={1}> 
+        <One imagee={img16} title='Harari'/>
+        <Two imagee={img17} title='Kambata'/>
+        <One imagee={img18} title='Karo'/>
+        <Two imagee={img19} title='Mursi'/>
+        <One imagee={img20} title='Oromo'/>
+      </Stack>
+      <Stack direction='row' spacing={1}> 
+        <One imagee={img21} title='Qebena'/>
+        <Two imagee={img22} title='Shinasha'/>
+        <One imagee={img23} title='Sidama'/>
+        <Two imagee={img24} title='Silte'/>
+        <One imagee={img25} title='Somali'/>
+      </Stack> <Stack direction='row' spacing={1}> 
+        <One imagee={img26} title='Welayta'/>
+        {/* <Two imagee={img12} title='Gurage'/>
+        <One imagee={img13} title='Hadya'/>
+        <Two imagee={img14} title='Halaba'/>
+        <One imagee={img15} title='Hamar'/> */}
+      </Stack>
+  </Stack>
+      } 
      <Stack  direction='row' ml={90} pl={7} sx={{ boxShadow:3 ,width:160 }} mt={5}> 
                         <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
                         <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
