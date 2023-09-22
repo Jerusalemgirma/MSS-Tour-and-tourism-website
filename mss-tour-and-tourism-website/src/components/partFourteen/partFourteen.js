@@ -43,7 +43,7 @@ import img23 from '../../assets/nations/sidama.jpg'
 import img24 from '../../assets/nations/silte.jpg'
 import img25 from '../../assets/nations/somali.jpg'
 import img26 from '../../assets/nations/welayta.jpg'
-
+import imgg from '../../assets/nations/all.jpg'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -53,27 +53,28 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 
 
 
-const Fourteen=()=>{
+const PartFourteen=()=>{
     const [count,setCount]=useState(1)
 
     const One=(props)=>{
         return(
-        <Box sx={{ borderRadius:'5%',  }}>
-            <h2>{props.title}</h2>
-            <img src={props.imagee}/>
+        <Box sx={{ borderRadius:'7%', border:0.5,textAlign:"center" }}>
+            <h2 >{props.title}</h2>
+            <img src={props.imagee} style={{ width:320,height:260 ,borderBottomLeftRadius:'7%',borderBottomRightRadius:'7%'}}/>
         </Box>
         )
     }
 
     const Two=(props)=>{
         return(
-            <Box>
-            <img src={props.imagee}/>
-            <h2>{props.title}</h2>
+        <Box sx={{ borderRadius:'7%', border:0.5,textAlign:"center"}}>
+            <img src={props.imagee} style={{ width:320,height:260 ,borderTopLeftRadius: '7%', borderTopRightRadius: '7%'}}/>
+            <h2 >{props.title}</h2>
 
         </Box>
         )
     }
+
     const add=()=>{
         if(count===2){
             setCount(2)
@@ -86,12 +87,42 @@ const Fourteen=()=>{
         }else{setCount(count-1)}
     }
 
+
     return(
     <Box>
-       <Stack direction='column' spacing={1} borderRadius='7%'>
-        <Stack direction='row' spacing={1}> 
-          
+        <h1> Nations and Nationalities in Ethiopia</h1>
+        <Stack direction='row'spacing={2} pr={13} pl={2}>
+
+            <Box >
+                <img src={imgg}/>
+            </Box>
+            <h2 style={{ textAlign:'center' }}>
+            The Ethiopian peoples comprise about eighty nationalities of which the
+             Amhara and the Oromo constitute the majority, with about 60 percent of 
+             the total population. Ethiopia represents a melting pot of ancient cultures with Middle Eastern and African cultures evident in the religious, ethnic and language composition 
+             Approximately 85 percent of the population live in the rural areas. Ethiopia is home to some fascinating linguistic diversity. Broadly speaking, languages in Ethiopia can be classified within four major language groups, though the country is also home to several unclassified tongues. 
+
+             The four main language groups in Ethiopia are Semitic, Cushitic, Omotic and Nilo-Saharan. These fit within two wider groupings of the language family tree. 
+            
+             Ethiopia is the oldest independent country in Africa and one of the oldest in the world. What are believed to be the oldest remains of a human ancestor ever found, which have been dated as being some five million years old, were discovered in the Awash Valley in Ethiopia. This beats the discovery of “Lucy”, a 3.2 million year old skeleton, who was unearthed in the same area in 1974.
+
+            </h2>
         </Stack>
-    </Stack> 
+        <h1> Some nationalities listed below</h1>
+       { (count ===1) && <Stack direction='column' spacing={1} borderRadius='7%'>
+        <Stack direction='row' spacing={1}> 
+          <One imagee={img1} title='Afar'/>
+          <Two imagee={img2} title='Amhara'/>
+          <One imagee={img3} title='Argoba'/>
+          <Two imagee={img4} title='Awii'/>
+          <One imagee={img5} title='Basketo'/>
+
+        </Stack>
+    </Stack>
+     }
+     {(count ===2) && <></>} 
     </Box>
 )}
+
+
+export default  PartFourteen

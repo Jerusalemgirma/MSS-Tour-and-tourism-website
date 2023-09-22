@@ -63,9 +63,9 @@ const PartEight=()=>{
                     <h6 style={{ fontSize:20 }}>{props.location}</h6>
                     <p style={{ fontSize:30,marginLeft:30,marginRight:30,marginBottom:108}}>{props.detail}</p>
                     <Stack  direction='row' ml={60} pl={7} sx={{ boxShadow:3 ,width:160 }}> 
-                     <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
-                     <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
-                   </Stack>
+                        <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
+                        <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
+                    </Stack>
                   <Stack direction='row' spacing={1} >
                     <img src={props.image5} style={{ width:265,height:210 }}/>
                     <img src={props.image3 } style={{ width:270,height:210 }}/>

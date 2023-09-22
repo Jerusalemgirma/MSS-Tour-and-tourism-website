@@ -17,7 +17,7 @@ import PartTen from "../partTen/partTen"
 import PartEleven from "../partEleven/partEleven"
 import PartTwelve from "../partTwelve/partTwelve"
 import PartThirteen from "../partThirteen/partThirteen"
-
+import PartFourteen from "../partFourteen/partFourteen"
 
 const Home=()=>{
     return(
@@ -40,7 +40,7 @@ const Home=()=>{
               <Grid item sx={{ }}> <PartNine /></Grid>
               <Grid item sx={{ }}> <PartTen /> </Grid>
               <Grid item sx={{ }}> <PartEleven /> </Grid>
-              {/* <Grid item sx={{ }}> <PartThirteen /> </Grid> */}
+              <Grid item sx={{ }}> <PartFourteen /> </Grid>
 
 
            </Grid>
