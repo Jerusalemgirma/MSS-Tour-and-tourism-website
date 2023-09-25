@@ -12,71 +12,79 @@ import Select from '@mui/material/Select';
 const Navbar=()=>{
     const age=''
     return(
-          <Grid container 
-          sx={{ boxShadow: 4   }}
-          >
+          <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
 
             <Grid item  lg={4}  sx={{ }}>
-            <Stack direction='row'>  
-            <Box
+              <Stack direction='row'>  
+                <Box
               component="img"
               sx={{
               height: 90,
               width:70,
-              marginLeft:7,
+              marginLeft:4,
               marginRight:3
                }}
               alt="logo image"
               src={img1} 
             />
 
-            <h1>visit ethiopia</h1>
-            </Stack> 
+               <h1>Visit Ethiopia</h1>
+              </Stack> 
             </Grid>
 
             <Grid item lg={8}>
-             <Stack direction='row'  justifyContent='space-evenly'   sx={{ marginLeft:'20px' }}>
-              <FormControl sx={{ width:'170px' }} >
-                <InputLabel >select city</InputLabel>
+             <Stack direction='row'  justifyContent='space-evenly' sx={{ marginLeft:'16px' }}>
+              <FormControl sx={{ width:'165px' }} >
+                <InputLabel sx={{ fontSize:18,fontWeight:35, }} >Select City</InputLabel>
                  <Select
                     value={age}
+                    sx={{border:'2px solid black',borderRadius:50 }}
+                    
                     // label="Language"
                     // onChange={handleChange}
                 >
-                    <MenuItem value={10}>english</MenuItem>
-                    <MenuItem value={20}>amharic</MenuItem>
-                    <MenuItem value={30}>spanish</MenuItem>
-                    <MenuItem value={30}>korean</MenuItem>
-                    <MenuItem value={30}>arabic</MenuItem>
+                    <MenuItem value={'Tigray'}>Tigray</MenuItem>
+                    <MenuItem value={'Afar'}>Afar</MenuItem>
+                    <MenuItem value={'Amhara'}>Amhara</MenuItem>
+                    <MenuItem value={'Oromia'}>Oromia</MenuItem>
+                    <MenuItem value={'Somali'}> Somali</MenuItem>
+                    <MenuItem value={'Benishangul-Gumuz'}> Benishangul-Gumuz</MenuItem>
+                    <MenuItem value={'Gambella'}>  Gambella</MenuItem>
+                    <MenuItem value={'Harari'}>Harari</MenuItem>
+                    <MenuItem value={'SNNPR'}>SNNPR</MenuItem>
+                    <MenuItem value={'Addis Ababa'}> Addis Ababa</MenuItem>
+                    <MenuItem value={'Dire Dawa'}>Dire Dawa</MenuItem>
+
+
 
                 </Select>
             </FormControl>
 
               <form>
               
-                 <Box sx={{ border: 1 , borderRadius:50}}> 
-                
+                 <Box sx={{ border:'3px solid black' , borderRadius:50}}>                 
                    <InputBase
-                //    sx={{ ml: 1, flex: 1 }}
-                   placeholder=" Search Places"
+                   sx={{ paddingLeft:2,paddingBottom:1.5,paddingTop:1 }}
+                    placeholder=" Search Places"
                   />
-                  <IconButton type="submit" sx={{ p: '13px' }} >
+                  <IconButton type="submit" sx={{ p: '10px' }} >
                     <SearchIcon />
                   </IconButton>
                     
                  </Box>
               </form>
-              <FormControl sx={{ width:'200px' }} >
-                <InputLabel >Language</InputLabel>
+
+              <FormControl sx={{ width:'180px' }} >
+                <InputLabel  >Language</InputLabel>
                  <Select
-                   
+                   sx={{ border:'2px solid black' , borderRadius:50 }}
                     value={age}
                     label="Language"
                     // onChange={handleChange}
                 >
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
+                    <MenuItem value={10}>Amharic</MenuItem>
+                    <MenuItem value={20}>English</MenuItem>
+                    <MenuItem value={30}>Arabic</MenuItem>
                 </Select>
             </FormControl>
               <h3>mihiret desalegn</h3>
