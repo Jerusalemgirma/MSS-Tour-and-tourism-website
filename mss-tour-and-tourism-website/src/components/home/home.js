@@ -173,7 +173,7 @@ const Home=()=>{
 
 
     return(
-        <Box>
+        <Box >
            <Grid container direction='column' spacing={5}>
 
 

@@ -1,11 +1,12 @@
 import React from "react";
 import Home from "./components/home/home";
 import Navbar from "./components/navbar/navbar";
+import { Box } from "@mui/material";
 function App() {
   return (
-    <div className="App">
+    <Box className="App" >
      <Home />
-    </div>
+    </Box>
   );
 }
 

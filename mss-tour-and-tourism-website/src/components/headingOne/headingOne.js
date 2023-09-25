@@ -8,8 +8,17 @@ const HeadingOne=()=>{
     return(
 
         <Box sx={{ textAlign: 'center'}}>
-         <h1 style={{     textAlign: 'center', }}>where to find delicious foods?</h1>
-         <p style={{ fontSize:'20px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+         <h1 style={{textAlign: 'center', }}>Where we can find amazing place to visit?</h1>
+         <p style={{ fontSize:'22px', fontWeight:25 ,paddingLeft:15,paddingRight:15}}>
+          
+
+         Ethiopia, in the Horn of Africa, is a rugged,
+          landlocked country split by the Great Rift Valley. With 
+          archaeological finds dating back more than 3 million years,
+           it’s a place of ancient culture. Among its important sites are
+            Lalibela with its rock-cut Christian churches from the 12th–13th centuries. Aksum is the ruins of an ancient city 
+         with obelisks, tombs, castles and Our Lady Mary of Zion church.
+          </p>
          <Stack 
          direction='row'
          spacing={5}   
