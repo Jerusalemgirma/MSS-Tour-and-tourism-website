@@ -27,15 +27,15 @@ const PartTwelve=()=>{
     const Cardd=(props)=>{
         return(
         <ButtonBase>
-          <Box sx={{ border:1,borderRadius:'5%', width:310,height:480,boxShadow:4,
+          <Box sx={{ border:1,borderRadius:'5%', width:310,height:420,boxShadow:4,
             '&:hover': {
               boxShadow:8,
               border:2,
               borderColor:'red'
             },
         }}> 
-            <img src={props.imagee} style={{ width:308,height:360 , border:1,borderRadius:'5%',}}/>
-            <h2 style={{ paddingTop:15 }}> {props.title} </h2>
+            <img src={props.imagee} style={{ width:308,height:320 , border:1,borderRadius:'5%',}}/>
+            <h2 style={{ paddingTop:12 }}> {props.title} </h2>
             {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
