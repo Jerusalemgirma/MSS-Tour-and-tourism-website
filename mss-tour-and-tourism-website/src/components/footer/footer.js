@@ -106,13 +106,13 @@ const Footer=()=>{
                     <Box> 
                     <h1>Contact inforation</h1>
                         <p style={{ fontSize:25 ,fontWeight:15}}>
-                        <a href='#p'> <LocalPhoneIcon color="primary" fontSize="large" /> PhoneNumber</a><br/>
-                        <a href='#e'><EmailIcon color="primary" fontSize="large" /> Email</a> <br/>
-                        <a href='#f'><FacebookIcon color="primary" fontSize="large" /> Facebook </a><br/>
-                        <a href='#i'> <InstagramIcon color="primary" fontSize="large" /> Instagram</a><br/>
-                        <a href='#t'> <TelegramIcon color="primary" fontSize="large" />  Telegram</a><br/>
-                        <a href='#tw'><TwitterIcon color="primary" fontSize="large" /> Twitter</a><br/>
-                        <a href='#l'> <LinkedInIcon color="primary" fontSize="large" /> LinkedIn</a>
+                        <a href='#p' style={{ color:'black',textDecoration:'none' }}> <LocalPhoneIcon color="primary" fontSize="large" /> PhoneNumber</a><br/>
+                        <a href='#e' style={{ color:'black',textDecoration:'none' }}><EmailIcon color="primary" fontSize="large" /> Email</a> <br/>
+                        <a href='#f' style={{ color:'black',textDecoration:'none' }}><FacebookIcon color="primary" fontSize="large" /> Facebook </a><br/>
+                        <a href='#i' style={{ color:'black',textDecoration:'none' }}> <InstagramIcon color="primary" fontSize="large" /> Instagram</a><br/>
+                        <a href='#t' style={{ color:'black',textDecoration:'none' }}> <TelegramIcon color="primary" fontSize="large" />  Telegram</a><br/>
+                        <a href='#tw' style={{ color:'black',textDecoration:'none' }}><TwitterIcon color="primary" fontSize="large" /> Twitter</a><br/>
+                        <a href='#l' style={{ color:'black',textDecoration:'none' }}> <LinkedInIcon color="primary" fontSize="large" /> LinkedIn</a>
                         </p>
 
 
@@ -120,16 +120,16 @@ const Footer=()=>{
                     <Box sx={{ width:450 }}>
                        <h1 >On page Route</h1> 
                     <b style={{fontSize:20  }}>
-                        <a href="#part1">What Parks are there in Ethiopia?</a><br/>                
-                       <a  href='#part2'> What Heritages of ethiopia are registerd on unesico?</a><br/>
-                       <a href='#part3'>  What Hotels there in Ethiopia?</a><br/>
-                       <a href='#part4'>  what intageble heritage or Events of ethiopia registerd on unesico?</a><br/>
-                       <a href='#part5'>  What Muesums are there in Ethiopia?</a><br/>
-                       <a href='#part6'> What Waterfalls are there in Ethiopia?</a><br/>
-                       <a href='#part7'> what events and festival celebration are there in ethiopia?</a><br/>
-                       <a href='#part8'> What foods are there in Ethiopia?</a><br/>
-                       <a href='#part9'> how many nations and nationatonality are there in ethiopia?</a><br/>
-                       <a href='#part10'> What animals and plants are there in Ethiopia?</a>
+                        <a href="#part1" style={{ color:'black' }}>What Parks are there in Ethiopia?</a><br/>                
+                       <a  href='#part2' style={{ color:'black' }}> What Heritages of ethiopia are registerd on unesico?</a><br/>
+                       <a href='#part3' style={{ color:'black' }}>  What Hotels there in Ethiopia?</a><br/>
+                       <a href='#part4' style={{ color:'black' }}>  what intageble heritage or Events of ethiopia registerd on unesico?</a><br/>
+                       <a href='#part5' style={{ color:'black' }}>  What Muesums are there in Ethiopia?</a><br/>
+                       <a href='#part6' style={{ color:'black' }}> What Waterfalls are there in Ethiopia?</a><br/>
+                       <a href='#part7' style={{ color:'black' }}> what events and festival celebration are there in ethiopia?</a><br/>
+                       <a href='#part8' style={{ color:'black' }}> What foods are there in Ethiopia?</a><br/>
+                       <a href='#part9' style={{ color:'black' }}> how many nations and nationatonality are there in ethiopia?</a><br/>
+                       <a href='#part10' style={{ color:'black' }}> What animals and plants are there in Ethiopia?</a>
                     </b>
                     </Box>
                     {/* <Box>page route</Box> */}
