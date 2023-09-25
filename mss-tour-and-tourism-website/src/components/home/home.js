@@ -41,15 +41,16 @@ const Home=()=>{
             <Box>
                
                 <Stack >
-                    <Box sx={{ 
-                    backgroundColor:'#131414' ,
-                    color:'white',
-                    }} 
+                    <Box 
+                      sx={{ 
+                        backgroundColor:'#131414',
+                        color:'white'
+                        }} 
                     p={5}>
                        <h1>Contact Us</h1>
                         <form  >
                             <Stack direction='column' spacing={2} >
-                              <Stack direction='row' spacing={5}>
+                              <Stack direction='row'  spacing={5}>
                                <Box >
                                 <h3>Enter Full name</h3>
                                 <TextField 
@@ -91,7 +92,7 @@ const Home=()=>{
                                  style: {
                                    color: "white"
                                  }
-                               }}                              /> 
+                               }} /> 
                              </Box>
                              <Box>
                              <h3>Enter your comment</h3>
@@ -123,8 +124,7 @@ const Home=()=>{
                                 appearance  to wondefull events and festival celebration .it also give information and hint
                                 about most visted places, amazing park and muesums , waterfalls and volcanos ,mountain and plains,endemic plant and 
                                 animals,unique foods and dress in Ethiopia for peoples who want vist ethiopia and make this easy .
-                            </p>
-    
+                            </p>    
                         </Box>
                         <Box> 
                         <h1>Contact inforation</h1>
