@@ -5,7 +5,13 @@ import { Box,Grid,Button } from"@mui/material";
 import { Stack } from "@mui/material";
 import TextField from '@mui/material/TextField';
 
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer=()=>{
     return(
@@ -84,28 +90,29 @@ const Footer=()=>{
 
 
                 <Box p={8} sx={{backgroundColor:'#b4e2cb' }}>
-                    footer
+                   
                     <Stack direction='row' spacing={16}>
 
                     <Box sx={{ width:500 }}>
                         <h1>About Us</h1>
-                        <b style={{ fontSize:20 }}>
+                        <p style={{ fontSize:25 ,fontWeight:15}}>
                             Visit Ethiopia website is website which try to show all over ethiopia from the geographical
                             appearance  to wondefull events and festival celebration .it also give information and hint
                             about most visted places, amazing park and muesums , waterfalls and volcanos ,mountain and plains,endemic plant and 
-                            animals,unique foods and dress in Ethiopia for peoples who want vist ethiopia and make this easy 
-                        </b>
+                            animals,unique foods and dress in Ethiopia for peoples who want vist ethiopia and make this easy .
+                        </p>
 
                     </Box>
                     <Box> 
                     <h1>Contact inforation</h1>
-                        <p >phoneNumber:
-                        email:  <br/>
-                        instagram:<br/>
-                        telegram:<br/>
-                        skype:<br/>
-                        twitter:<br/>
-                        linkedIn:
+                        <p style={{ fontSize:25 ,fontWeight:15}}>
+                        <a href='#p'> <LocalPhoneIcon color="primary" fontSize="large" /> PhoneNumber</a><br/>
+                        <a href='#e'><EmailIcon color="primary" fontSize="large" /> Email</a> <br/>
+                        <a href='#f'><FacebookIcon color="primary" fontSize="large" /> Facebook </a><br/>
+                        <a href='#i'> <InstagramIcon color="primary" fontSize="large" /> Instagram</a><br/>
+                        <a href='#t'> <TelegramIcon color="primary" fontSize="large" />  Telegram</a><br/>
+                        <a href='#tw'><TwitterIcon color="primary" fontSize="large" /> Twitter</a><br/>
+                        <a href='#l'> <LinkedInIcon color="primary" fontSize="large" /> LinkedIn</a>
                         </p>
 
 
@@ -113,17 +120,16 @@ const Footer=()=>{
                     <Box sx={{ width:450 }}>
                        <h1 >On page Route</h1> 
                     <b style={{fontSize:20  }}>
-                        <a href="#part1">What Parks are there in Ethiopia?</a><br/>
-                        
-                       <a> What Heritages of ethiopia are registerd on unesico?</a><br/>
-                          What Hotels there in Ethiopia?<br/>
-                         what intageble heritage or Events of ethiopia registerd on unesico?<br/>
-                         What Muesums are there in Ethiopia?<br/>
-                         What Waterfalls are there in Ethiopia?<br/>
-                         what events and festival celebration are there in ethiopia?<br/>
-                         What foods are there in Ethiopia?<br/>
-                         how many nations and nationatonality are there in ethiopia?<br/>
-                         What animals and plants are there in Ethiopia?
+                        <a href="#part1">What Parks are there in Ethiopia?</a><br/>                
+                       <a  href='#part2'> What Heritages of ethiopia are registerd on unesico?</a><br/>
+                       <a href='#part3'>  What Hotels there in Ethiopia?</a><br/>
+                       <a href='#part4'>  what intageble heritage or Events of ethiopia registerd on unesico?</a><br/>
+                       <a href='#part5'>  What Muesums are there in Ethiopia?</a><br/>
+                       <a href='#part6'> What Waterfalls are there in Ethiopia?</a><br/>
+                       <a href='#part7'> what events and festival celebration are there in ethiopia?</a><br/>
+                       <a href='#part8'> What foods are there in Ethiopia?</a><br/>
+                       <a href='#part9'> how many nations and nationatonality are there in ethiopia?</a><br/>
+                       <a href='#part10'> What animals and plants are there in Ethiopia?</a>
                     </b>
                     </Box>
                     {/* <Box>page route</Box> */}
