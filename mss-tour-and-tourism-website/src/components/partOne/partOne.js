@@ -24,13 +24,14 @@ const PartOne=()=>{
 
     return(
     <Stack spacing={5} mt={6}>
-        <Stack direction='row' spacing={3}>
+        <Stack direction='row' spacing={4} pl={10}>
          {
             pics.map((e)=>(
                 
                <Box>
                 
-                <Cardd imagee={e}
+                <Cardd    
+                          imagee={e}
                            title='Ethiopia'
                            explanation='EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia
                            EthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopiaEthiopia'/></Box>
@@ -38,7 +39,7 @@ const PartOne=()=>{
          
           }
         </Stack>
-        <Stack direction='row' spacing={3}>
+        <Stack direction='row' spacing={3}  pl={10}>
          {
              pics2.map((e)=>(
                 

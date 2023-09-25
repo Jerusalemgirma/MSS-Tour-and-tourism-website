@@ -16,14 +16,14 @@ import ButtonBase from '@material-ui/core/ButtonBase';
      return(
         <div>
           <ButtonBase>
-            <Card sx={{ boxShadow:3 }}>
+            <Card sx={{ boxShadow:3 ,width:380,borderRadius:5,backgroundColor:'#e3f1ea'}}>
              <CardMedia
-               sx={{ height: 250 }}
+               sx={{ height: 210 }}
                image={props.imagee}
               title="green iguana"
             />
 
-          <CardContent>
+          <CardContent sx={{  }}>
             <Typography gutterBottom variant="h5" component="div">
              {props.title} 
              </Typography>
