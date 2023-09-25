@@ -83,23 +83,23 @@ const Footer=()=>{
 
 
 
-                <Box p={5} sx={{backgroundColor:'#b4e2cb' }}>
+                <Box p={8} sx={{backgroundColor:'#b4e2cb' }}>
                     footer
-                    <Stack direction='row'>
+                    <Stack direction='row' spacing={16}>
 
                     <Box sx={{ width:500 }}>
                         <h1>About Us</h1>
-                        <p>
+                        <b style={{ fontSize:20 }}>
                             Visit Ethiopia website is website which try to show all over ethiopia from the geographical
                             appearance  to wondefull events and festival celebration .it also give information and hint
                             about most visted places, amazing park and muesums , waterfalls and volcanos ,mountain and plains,endemic plant and 
-                            animals in Ethiopia for peoples who want vist ethiopia and make this easy 
-                        </p>
+                            animals,unique foods and dress in Ethiopia for peoples who want vist ethiopia and make this easy 
+                        </b>
 
                     </Box>
                     <Box> 
                     <h1>Contact inforation</h1>
-                        <p>phoneNumber:
+                        <p >phoneNumber:
                         email:  <br/>
                         instagram:<br/>
                         telegram:<br/>
@@ -111,7 +111,8 @@ const Footer=()=>{
 
                     </Box>
                     <Box sx={{ width:450 }}>
-                       <h1>On page Catagories</h1> 
+                       <h1 >On page Route</h1> 
+                    <b style={{fontSize:20  }}>
                         <a href="#part1">What Parks are there in Ethiopia?</a><br/>
                         
                        <a> What Heritages of ethiopia are registerd on unesico?</a><br/>
@@ -123,9 +124,9 @@ const Footer=()=>{
                          What foods are there in Ethiopia?<br/>
                          how many nations and nationatonality are there in ethiopia?<br/>
                          What animals and plants are there in Ethiopia?
-    
+                    </b>
                     </Box>
-                    <Box>page route</Box>
+                    {/* <Box>page route</Box> */}
 
                     </Stack>
                     
