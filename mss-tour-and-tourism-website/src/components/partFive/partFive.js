@@ -28,23 +28,23 @@ const PartFive=()=>{
     const FoodCard=(props)=>{
         return(
         <Stack >
-            <Box sx={{ boxShadow:5,marginBottom:5 }}>
+            <Box sx={{ boxShadow:3,marginBottom:2 }}>
               <Grid container>
                 <Grid item lg={6} xl={6} md={6} sm={6} xs={6} >
                    <Box  >
-                    < img src={props.imageOne} style={{ width:270, height:200,marginLeft:35}} />
+                    < img src={props.imageOne} style={{ width:250, height:180,marginLeft:35}} />
                      <b style={{ fontSize:25,marginLeft:35 }}> {props.nameOne}</b>
                     </Box> 
                    <Box>
-                    < img src={props.imageTwo} style={{ width:270, height:200,marginLeft:35}}/>
+                    < img src={props.imageTwo} style={{ width:250, height:180,marginLeft:35}}/>
                     <b style={{ fontSize:25 ,marginLeft:35}}> {props.nameTwo}</b>
 
                  </Box> 
 
                 </Grid>
-                <Grid item lg={6} xl={6} md={6} sm={6} xs={6} mb={9}>
+                <Grid item lg={6} xl={6} md={6} sm={6} xs={6} mb={3}>
                   <Box>
-                    < img src={props.imageThree} style={{ height :440, width:250}}/>
+                    < img src={props.imageThree} style={{ height :400, width:250}}/>
                     <b style={{ fontSize:25 ,marginLeft:35}}> {props.nameThree}</b>
 
                 </Box> 
