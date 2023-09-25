@@ -81,7 +81,55 @@ const Footer=()=>{
                 </Box>
 
 
-                <Box>footer</Box>
+
+
+                <Box p={5} sx={{backgroundColor:'#b4e2cb' }}>
+                    footer
+                    <Stack direction='row'>
+
+                    <Box sx={{ width:500 }}>
+                        <h1>About Us</h1>
+                        <p>
+                            Visit Ethiopia website is website which try to show all over ethiopia from the geographical
+                            appearance  to wondefull events and festival celebration .it also give information and hint
+                            about most visted places, amazing park and muesums , waterfalls and volcanos ,mountain and plains,endemic plant and 
+                            animals in Ethiopia for peoples who want vist ethiopia and make this easy 
+                        </p>
+
+                    </Box>
+                    <Box> 
+                    <h1>Contact inforation</h1>
+                        <p>phoneNumber:
+                        email:  <br/>
+                        instagram:<br/>
+                        telegram:<br/>
+                        skype:<br/>
+                        twitter:<br/>
+                        linkedIn:
+                        </p>
+
+
+                    </Box>
+                    <Box sx={{ width:450 }}>
+                       <h1>On page Catagories</h1> 
+                        <a href="#part1">What Parks are there in Ethiopia?</a><br/>
+                        
+                       <a> What Heritages of ethiopia are registerd on unesico?</a><br/>
+                          What Hotels there in Ethiopia?<br/>
+                         what intageble heritage or Events of ethiopia registerd on unesico?<br/>
+                         What Muesums are there in Ethiopia?<br/>
+                         What Waterfalls are there in Ethiopia?<br/>
+                         what events and festival celebration are there in ethiopia?<br/>
+                         What foods are there in Ethiopia?<br/>
+                         how many nations and nationatonality are there in ethiopia?<br/>
+                         What animals and plants are there in Ethiopia?
+    
+                    </Box>
+                    <Box>page route</Box>
+
+                    </Stack>
+                    
+                    </Box>
             </Stack>
         </Box>
     )
