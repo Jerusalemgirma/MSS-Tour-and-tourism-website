@@ -3,7 +3,7 @@
 import React from "react";
 import { Box,Stack } from "@mui/material";
 import Divider from '@mui/material/Divider';
-// import {Link}
+import {Link} from 'react-router-dom'
 
 const HeadingOne=()=>{
     return(
@@ -14,13 +14,14 @@ const HeadingOne=()=>{
          <p style={{ fontSize:'22px', fontWeight:25 }}>
           
 
-          Ethiopia, in the Horn of Africa, is a rugged,
-          landlocked country split by the Great Rift Valley. With 
-          archaeological finds dating back more than 3 million years,
-          it's a place of ancient culture. Among its important sites are
-          Lalibela with its rock-cut Christian churches from the 12th-13th
-          centuries. Aksum is the ruins of an ancient city 
-          with obelisks, tombs, castles and Our Lady Mary of Zion church.
+                  Ethiopia, in the Horn of Africa, is a rugged,
+                  landlocked country split by the Great Rift Valley. With 
+                  archaeological finds dating back more than 3 million years,
+                  it's a place of ancient culture. Among its important sites are
+                  Lalibela with its rock-cut Christian churches from the 12th-13th
+                  centuries. Aksum is the ruins of an ancient city 
+                  with obelisks, tombs, castles and Our Lady Mary of Zion church.
+                  
           </p>
           </Box>
          <Stack 

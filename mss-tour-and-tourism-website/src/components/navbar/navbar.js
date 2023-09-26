@@ -17,12 +17,12 @@ const Navbar=()=>{
             <Grid item  lg={4}  sx={{ }}>
               <Stack direction='row'>  
                 <Box
-              component="img"
-              sx={{
-              height: 90,
-              width:70,
-              marginLeft:4,
-              marginRight:3
+                component="img"
+                sx={{
+                 height: 90,
+                 width:70,
+                 marginLeft:4,
+                 marginRight:3
                }}
               alt="logo image"
               src={img1} 
@@ -42,6 +42,7 @@ const Navbar=()=>{
                     
                     // label="Language"
                     // onChange={handleChange}
+                    
                 >
                     <MenuItem value={'Tigray'}>Tigray</MenuItem>
                     <MenuItem value={'Afar'}>Afar</MenuItem>
