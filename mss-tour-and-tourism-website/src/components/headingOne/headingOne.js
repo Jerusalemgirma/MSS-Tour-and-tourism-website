@@ -8,7 +8,7 @@ import Divider from '@mui/material/Divider';
 const HeadingOne=()=>{
     return(
 
-        <Box sx={{ textAlign: 'center'}}>
+        <Box pt={3} pb={2} sx={{ textAlign: 'center',backgroundColor:'#e8f6ef'}}>
          <h1 style={{textAlign: 'center', }}>Where we can find amazing place to visit?</h1>
          <Box sx={{ paddingLeft:12,paddingRight:18 }}>
          <p style={{ fontSize:'22px', fontWeight:25 }}>
@@ -55,9 +55,7 @@ const HeadingOne=()=>{
              </h2>
         </Box>
 
-         {/* <Box sx={{ height:'700px', backgroundColor:"powderblue" }}>
 
-         </Box> */}
          
         </Box>
 

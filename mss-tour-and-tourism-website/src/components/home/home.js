@@ -177,8 +177,8 @@ const Home=()=>{
            <Grid container direction='column' spacing={5}>
 
 
-              <Grid item sx={{  }} ><Navbar /></Grid>
-              <Grid item sx={{  }}><HeadingOne /></Grid>
+              {/* <Grid item sx={{  }} ><Navbar /></Grid>
+              <Grid item sx={{  }}><HeadingOne /></Grid> */}
               <Grid item id='part1' sx={{ }}> <PartOne /> </Grid>
               <Grid item id='part2' sx={{ }}><PartTwo /></Grid>
               <Grid item id='part3' sx={{ }}><PartThree /></Grid>
