@@ -47,7 +47,7 @@ const AddisAbeba=()=>{
  
     return(
         
-          <Stack spacing={2}> 
+          <Stack spacing={2} ml={1} mr={1}> 
  <Part imagee={img1}
                 title='National Museum of Ethiopia'
                  explanation='The National Museum of Ethiopia, 
