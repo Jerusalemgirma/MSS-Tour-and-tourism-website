@@ -8,12 +8,17 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { useState } from "react";
 
 const Navbar=()=>{
-    const [city,setCity]='addisabeba'
-    const [language,setLanguage]='english'
+    const [city,setCity]=useState('')
+    const [language,setLanguage]=useState('')
+
+    const handleLanguageChange=(e)=>{
+      setLanguage(e.target.value)
+   }
     const handleCityChange=(e)=>{
-       setCity(e)
+       setCity(e.target.value)
     }
     return(
           <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
@@ -43,23 +48,25 @@ const Navbar=()=>{
                 <InputLabel sx={{ fontSize:18,fontWeight:35, }} >Select City</InputLabel>
                  <Select
                     value={city}
-                    sx={{border:'2px solid black',borderRadius:50 }}
+                    sx={{border:'2px solid black',borderRadius:50 ,color:'black'}}
                     
                     // label="Language"
                     onChange={(e)=>handleCityChange(e)}
-
+               
+                    // sx={{ color:'black' }}
+               
                 >
-                    <MenuItem value={'Tigray'}>Tigray</MenuItem>
-                    <MenuItem value={'Afar'}>Afar</MenuItem>
-                    <MenuItem value={'Amhara'}>Amhara</MenuItem>
-                    <MenuItem value={'Oromia'}>Oromia</MenuItem>
-                    <MenuItem value={'Somali'}> Somali</MenuItem>
-                    <MenuItem value={'Benishangul-Gumuz'}> Benishangul-Gumuz</MenuItem>
-                    <MenuItem value={'Gambella'}>  Gambella</MenuItem>
-                    <MenuItem value={'Harari'}>Harari</MenuItem>
-                    <MenuItem value={'SNNPR'}>SNNPR</MenuItem>
-                    <MenuItem value={'Addis Ababa'}> Addis Ababa</MenuItem>
-                    <MenuItem value={'Dire Dawa'}>Dire Dawa</MenuItem>
+                    <MenuItem value='Tigray'>Tigray</MenuItem>
+                    <MenuItem value='Afar'>Afar</MenuItem>
+                    <MenuItem value='Amhara'>Amhara</MenuItem>
+                    <MenuItem value='Oromia'>Oromia</MenuItem>
+                    <MenuItem value='Somali'> Somali</MenuItem>
+                    <MenuItem value='Benishangul-Gumuz'> Benishangul-Gumuz</MenuItem>
+                    <MenuItem value='Gambella'>  Gambella</MenuItem>
+                    <MenuItem value='Harari'>Harari</MenuItem>
+                    <MenuItem value='SNNPR'>SNNPR</MenuItem>
+                    <MenuItem value='AddisAbaba'> Addis Ababa</MenuItem>
+                    <MenuItem value='DireDawa'>Dire Dawa</MenuItem>
 
 
 
@@ -88,9 +95,9 @@ const Navbar=()=>{
                     label="Language"
                     onChange={handleLanguageChange}
                 >
-                    <MenuItem value={10}>Amharic</MenuItem>
-                    <MenuItem value={20}>English</MenuItem>
-                    <MenuItem value={30}>Arabic</MenuItem>
+                    <MenuItem value='Amharic'>Amharic</MenuItem>
+                    <MenuItem value='English'>English</MenuItem>
+                    <MenuItem value='Arabi'>Arabic</MenuItem>
                 </Select>
             </FormControl>
               <h3>mihiret desalegn</h3>
