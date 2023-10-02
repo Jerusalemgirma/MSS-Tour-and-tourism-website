@@ -10,7 +10,11 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const Navbar=()=>{
-    const age=''
+    const [city,setCity]='addisabeba'
+    const [language,setLanguage]='english'
+    const handleCityChange=(e)=>{
+       setCity(e)
+    }
     return(
           <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
 
@@ -34,15 +38,16 @@ const Navbar=()=>{
 
             <Grid item lg={8}>
              <Stack direction='row'  justifyContent='space-evenly' sx={{ marginLeft:'16px' }}>
+              
               <FormControl sx={{ width:'165px' }} >
                 <InputLabel sx={{ fontSize:18,fontWeight:35, }} >Select City</InputLabel>
                  <Select
-                    value={age}
+                    value={city}
                     sx={{border:'2px solid black',borderRadius:50 }}
                     
                     // label="Language"
-                    // onChange={handleChange}
-                    
+                    onChange={(e)=>handleCityChange(e)}
+
                 >
                     <MenuItem value={'Tigray'}>Tigray</MenuItem>
                     <MenuItem value={'Afar'}>Afar</MenuItem>
@@ -79,9 +84,9 @@ const Navbar=()=>{
                 <InputLabel  >Language</InputLabel>
                  <Select
                    sx={{ border:'2px solid black' , borderRadius:50 }}
-                    value={age}
+                    value={language}
                     label="Language"
-                    // onChange={handleChange}
+                    onChange={handleLanguageChange}
                 >
                     <MenuItem value={10}>Amharic</MenuItem>
                     <MenuItem value={20}>English</MenuItem>
