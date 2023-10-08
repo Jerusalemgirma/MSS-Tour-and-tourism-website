@@ -10,6 +10,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState } from "react";
 import {Link} from 'react-router-dom'
+import { ButtonBase } from "@material-ui/core";
 
 const Navbar=()=>{
     const [city,setCity]=useState('')
@@ -27,7 +28,9 @@ const Navbar=()=>{
           <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
 
             <Grid item  lg={4}  sx={{ }}>
-              <Stack direction='row'>  
+            <Link to='/'>
+              <ButtonBase>              
+               <Stack direction='row'>  
                 <Box
                 component="img"
                 sx={{
@@ -40,8 +43,11 @@ const Navbar=()=>{
               src={img1} 
             />
 
-               <h1>Visit Ethiopia</h1>
+               <h1 style={{ color:'black' }}>Visit Ethiopia</h1>
               </Stack> 
+              
+              </ButtonBase>
+              </Link>
             </Grid>
 
             <Grid item lg={8}>
