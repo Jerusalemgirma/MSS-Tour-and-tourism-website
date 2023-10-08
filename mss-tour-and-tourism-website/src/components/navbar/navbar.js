@@ -9,17 +9,20 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 
 const Navbar=()=>{
     const [city,setCity]=useState('')
     const [language,setLanguage]=useState('')
 
+    const handleCityChange=(e)=>{
+      setCity(e.target.value)
+
+   }
     const handleLanguageChange=(e)=>{
       setLanguage(e.target.value)
    }
-    const handleCityChange=(e)=>{
-       setCity(e.target.value)
-    }
+  
     return(
           <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
 
@@ -49,12 +52,7 @@ const Navbar=()=>{
                  <Select
                     value={city}
                     sx={{border:'2px solid black',borderRadius:50 ,color:'black'}}
-                    
-                    // label="Language"
-                    onChange={(e)=>handleCityChange(e)}
-               
-                    // sx={{ color:'black' }}
-               
+                    onChange={(e)=>handleCityChange(e)}               
                 >
                     <MenuItem value='Tigray'>Tigray</MenuItem>
                     <MenuItem value='Afar'>Afar</MenuItem>
@@ -65,7 +63,7 @@ const Navbar=()=>{
                     <MenuItem value='Gambella'>  Gambella</MenuItem>
                     <MenuItem value='Harari'>Harari</MenuItem>
                     <MenuItem value='SNNPR'>SNNPR</MenuItem>
-                    <MenuItem value='AddisAbaba'> Addis Ababa</MenuItem>
+                    <MenuItem value='AddisAbaba'> <Link to='addisabeba' sx={{ color:'black' }}>Addis Ababa</Link> </MenuItem>
                     <MenuItem value='DireDawa'>Dire Dawa</MenuItem>
 
 

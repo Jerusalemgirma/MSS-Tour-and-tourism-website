@@ -11,11 +11,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img from '../../assets/img1.png'
 import ButtonBase from '@material-ui/core/ButtonBase';
+import { Link, Navigate } from "react-router-dom";
 
   const Cardd=(props)=>{
      return(
         <div>
-          <ButtonBase>
+          <Link to='detailpage'>
+          <ButtonBase onClick={ ()=>{} }>
             <Card sx={{ boxShadow:3 ,width:380,borderRadius:5,backgroundColor:'#e3f1ea'}}>
              <CardMedia
                sx={{ height: 210 }}
@@ -38,6 +40,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
         </CardActions>
     </Card>
     </ButtonBase>
+    </Link>
         </div>
     )
 }
