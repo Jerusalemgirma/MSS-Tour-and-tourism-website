@@ -17,37 +17,50 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import IconButton from '@mui/material/IconButton';
 
   const Cardd=(props)=>{
-    const [clicked,setClicked]=useState(true)
+    const [clicked,setClicked]=useState(false)
      return(
         <div>
-          <Link to='detailpage'>
-          <ButtonBase onClick={ ()=>{} }>
-            <Card sx={{ boxShadow:3 ,width:380,borderRadius:5,backgroundColor:'#e3f1ea'}}>
+         
+            <Card sx={{ boxShadow:3 ,width:380,borderRadius:3,backgroundColor:'#f1f8f4'}}>
+            
              <CardMedia
-               sx={{ height: 210 }}
+               sx={{ height: 245 }}
                image={props.imagee}
-              title="green iguana"
+              // title="green iguana"
             />
-
-          <CardContent sx={{  }}>
+<Link to='detailpage'>
+<ButtonBase>
+          <CardContent sx={{ color:'black' }}>
+            
             <Typography gutterBottom variant="h5" component="div">
              {props.title} 
              </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
                {props.explanation}
            </Typography>
-         </CardContent>
 
+         </CardContent>
+         </ButtonBase>
+    </Link>
          <CardActions>
-           <Button size="small">Read more...</Button>
-           <Button size="small">Share</Button>
-           <IconButton color="danger" onClick={(prev)=>setClicked(!prev)}>
-            {clicked ?  <FavoriteIcon /> : <FavoriteBorderIcon/>}
-        </IconButton>
+           <Button >Read more...</Button>
+           <Button >Share</Button>
+           <IconButton   onClick={()=>setClicked(!clicked)} sx={{ bottom:358,position:'relative' ,left:130,fontSize:"large", borderRadius:'50%',backgroundColor:'white'}}>
+               {clicked ?  <FavoriteIcon  
+               sx={{
+
+                width:32,height:32,color:'red'
+              }}
+               /> : <FavoriteBorderIcon
+               sx={{
+
+                width:32,height:32,color:'black'
+              }}
+               />}
+           </IconButton>
         </CardActions>
     </Card>
-    </ButtonBase>
-    </Link>
+    
         </div>
     )
 }

@@ -32,7 +32,7 @@ const HeadingOne=()=>{
             justifyContent="center"
            >
 
-            <Box  ><Link><ButtonBase><h1 style={{ fontSize:'28x',color:'black' }}><b >Hotel</b></h1></ButtonBase></Link> </Box><Divider orientation="vertical" flexItem />
+            <Box  ><Link to='hotels'><ButtonBase><h1 style={{ fontSize:'28x',color:'black' }}><b >Hotel</b></h1></ButtonBase></Link> </Box><Divider orientation="vertical" flexItem />
 
             <Box><h1 style={{ fontSize:'28px' }}><b >Park</b></h1></Box><Divider orientation="vertical" flexItem />
 
@@ -56,13 +56,12 @@ const HeadingOne=()=>{
                finds dating back more than 3 million years, it's a place
                of ancient culture
              </h2>
-            <Link to ='/postregister'><ButtonBase><Button variant="contained"> register places </Button></ButtonBase></Link> 
+            <Link to ='/postregister'><ButtonBase><Button  variant="contained" sx={{ borderRadius:12,height:50,top:10,position:'relative' }}> register places </Button></ButtonBase></Link> 
         </Box>
 
 
          
         </Box>
-
         )
     
 }

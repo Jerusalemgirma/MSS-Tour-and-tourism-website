@@ -23,25 +23,27 @@ import img15 from '../../assets/catagories/addisabeba/Menelik II Square.jpg'
 import img16 from '../../assets/catagories/addisabeba/Yekatit 12 Monument.jpg'
 import img17 from '../../assets/catagories/addisabeba/Lion Park.jpg'
 import img18 from '../../assets/catagories/addisabeba/Adadi Mariam.jpg'
-import ButtonBase from '@material-ui/core/ButtonBase';
-
+import ButtonBase from '@material-ui/core/ButtonBase'
+import { Link } from 'react-router-dom'
 
 
 const AddisAbeba=()=>{
     const Part=(props)=>{
         return(
+            <Link to='/detailpage' >
 <ButtonBase>
-        <Stack direction='row' spacing={2} sx={{ height:400,borderBottom:1,boxShadow:2,borderRadius:4 }} pl={3} >
+        <Stack direction='row' spacing={2} sx={{height:400,borderBottom:1,boxShadow:2,borderRadius:4 ,borderColor:'black'}} pl={3} >
             <Box pt={2} >
                 <img src={props.imagee} style={{ height:365,width:550 ,borderRadius:8}}/>
             </Box>
             <Box pt={8}>
-                <h1 style={{ textAlign:'center' }}>{props.title}</h1>
-                <p style={{ fontSize:26,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
+                <h1 style={{color:'black' , textAlign:'center' }}>{props.title}</h1>
+                <p style={{color:'black' , fontSize:26,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
                 <Button variant='contained'  sx={{ textAlign:'center',marginTop:5 }}> Read more...</Button>
             </Box>
         </Stack>
-        </ButtonBase>)
+        </ButtonBase>
+        </Link>)
     }
 
  

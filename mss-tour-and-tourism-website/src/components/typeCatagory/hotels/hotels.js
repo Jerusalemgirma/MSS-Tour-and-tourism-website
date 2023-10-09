@@ -41,7 +41,8 @@ const Hotels=()=>{
             </Box>
         </Stack>
         </ButtonBase>
-        </Link>)
+        </Link>
+        )
     }
 
  
