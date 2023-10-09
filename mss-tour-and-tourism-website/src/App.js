@@ -6,7 +6,7 @@ import {Routes,BrowserRouter, Route} from 'react-router-dom'
 import HeadingOne from "./components/headingOne/headingOne";
 import AddisAbeba from "./components/cityCategory/addisAbeba";
 import DetailPage from "./components/detailPage/detailPage";
-
+import PostRegistration from "./components/postRegistration/postRegistration";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
                 < Route  exact={true} path='/' element={<Home/>}/>
                 < Route path='/addisabeba' element={<AddisAbeba />}/>
                 < Route path='/detailpage' element={<DetailPage />}/>
+                < Route path='/postregister' element={<PostRegistration />}/>
 
                 
            </Routes>

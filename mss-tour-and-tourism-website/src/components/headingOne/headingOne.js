@@ -1,9 +1,10 @@
 
 
 import React from "react";
-import { Box,Stack } from "@mui/material";
+import { Box,Button,Stack } from "@mui/material";
 import Divider from '@mui/material/Divider';
 import {Link} from 'react-router-dom'
+import { ButtonBase } from "@material-ui/core";
 
 const HeadingOne=()=>{
     return(
@@ -54,6 +55,7 @@ const HeadingOne=()=>{
                finds dating back more than 3 million years, it's a place
                of ancient culture
              </h2>
+            <Link to ='/postregister'><ButtonBase><Button variant="contained"> register places </Button></ButtonBase></Link> 
         </Box>
 
 

@@ -75,7 +75,7 @@ const Navbar=()=>{
 
 
                 </Select>
-            </FormControl>
+             </FormControl>
 
               <form>
               
