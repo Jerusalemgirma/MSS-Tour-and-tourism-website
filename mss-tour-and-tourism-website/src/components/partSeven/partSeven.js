@@ -61,6 +61,8 @@ import img42 from '../../assets/unesico/tiya1.jpg'
 import img43 from '../../assets/unesico/tiya2.jpg'
 import img44 from '../../assets/unesico/tiya3.jpg'
 import img45 from '../../assets/unesico/tiya4.jpg'
+import { Link } from "react-router-dom";
+import { ButtonBase } from "@material-ui/core";
 
 const PartSeven=()=>{
     const [count,setCount]=useState(1)
@@ -75,6 +77,9 @@ const PartSeven=()=>{
 
     const Cardd=(props)=>{
         return(
+          
+
+               
             <Stack direction='row'  p={3} sx={{boxShadow:4,backgroundColor:'#EBF5F6' }} >
               <Box  sx={{ textAlign:"center"}}>
                 
@@ -94,6 +99,7 @@ const PartSeven=()=>{
             </Box>
 
         </Stack>
+        
 
     )}
     return(

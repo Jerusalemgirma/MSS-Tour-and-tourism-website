@@ -56,7 +56,7 @@ const HeadingOne=()=>{
                finds dating back more than 3 million years, it's a place
                of ancient culture
              </h2>
-            <Link to ='/postregister'><ButtonBase><Button  variant="contained" sx={{ borderRadius:12,height:50,top:10,position:'relative' }}> register places </Button></ButtonBase></Link> 
+            <Link to ='/postregister'><ButtonBase><Button  variant="contained" sx={{ borderRadius:12,height:50,top:10,position:'relative' ,backgroundColor:'#89f2bd',color:'black'}}> register places </Button></ButtonBase></Link> 
         </Box>
 
 

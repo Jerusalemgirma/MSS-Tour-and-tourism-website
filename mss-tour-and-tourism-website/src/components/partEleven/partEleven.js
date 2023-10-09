@@ -30,7 +30,7 @@ import img10 from '../../assets/park/Omo National Park.jpg'
 import img11 from '../../assets/park/Kafta Sheraro National Park.jpg'
 import img12 from '../../assets/park/Geraille National Park.jpg'
 
-
+import {Link} from 'react-router-dom'
 
 const PartEleven=()=>{
 
@@ -38,6 +38,7 @@ const PartEleven=()=>{
 
         const Cardd=(props)=>{
         return(
+          <Link to='detailpage'>
         <ButtonBase>
           <Box sx={{ border:1,borderRadius:'5%', width:310,height:480,boxShadow:4,
             '&:hover': {
@@ -47,10 +48,11 @@ const PartEleven=()=>{
             },
         }}> 
             <img src={props.imagee} style={{ width:308,height:360 , border:1,borderRadius:'5%',}}/>
-            <h2 style={{ paddingTop:15 }}> {props.title} </h2>
+            <h2 style={{ paddingTop:15 ,color:'black'}}> {props.title} </h2>
             {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
+        </Link>
         )
     }
     return(

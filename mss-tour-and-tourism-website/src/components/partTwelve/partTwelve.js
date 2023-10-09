@@ -21,11 +21,13 @@ import img10 from '../../assets/museum/The Zoological Natural History Museum.jpg
 import img11 from '../../assets/museum/Addis Ababa Museum  Meskel Square.jpg'
 import img12 from '../../assets/museum/Modern Art Museum.jpg'
 import img13 from '../../assets/museum/Zoma Museum Mekanisa.jpg'
-
+import { Link } from 'react-router-dom';
 
 const PartTwelve=()=>{
     const Cardd=(props)=>{
         return(
+          <Link to='/detailpage'>
+          
         <ButtonBase>
           <Box sx={{ border:1,borderRadius:'5%', width:310,height:420,boxShadow:4,
             '&:hover': {
@@ -35,10 +37,12 @@ const PartTwelve=()=>{
             },
         }}> 
             <img src={props.imagee} style={{ width:308,height:320 , border:1,borderRadius:'5%',}}/>
-            <h2 style={{ paddingTop:12 }}> {props.title} </h2>
+            <h2 style={{ paddingTop:12,color:'black' }}> {props.title} </h2>
             {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
+        </Link >
+                
         )
     }
     return(

@@ -8,6 +8,7 @@ import img3 from '../../assets/hotels/taytu.jpg'
 import img2 from '../../assets/hotels/skylight.jpg'
 import img4 from '../../assets/hotels/daamat.jpg'
 import img5 from '../../assets/hotels/hilton.jpg'
+import { Link } from "react-router-dom";
 
 const PartThree=()=>{
    
@@ -16,6 +17,7 @@ const PartThree=()=>{
         <Stack direction='column' pl={12} pr={12} spacing={2} sx={{ color:'white' }}>
         <h1 style={{ color:'black' }}> enjoy amazing hotels in ethiopia</h1>
          <Stack  direction='row' spacing={2} sx={{ marginLeft:15 }}>
+          <Link to='/detailpage'>
            <ButtonBase>
              <Box sx={{ width:753,height:380, border:0.5 , borderRadius:'5%',
               '&:hover': {
@@ -33,10 +35,11 @@ const PartThree=()=>{
 
                 },
                }}/>
-                <h1  style={{ position:'relative',bottom:380}}>Sheraton Hotel</h1>
+                <h1  style={{ position:'relative',bottom:380 , color:'white',}}>Sheraton Hotel</h1>
 
              </Box>
             </ButtonBase>
+            </Link>
             <ButtonBase>
             <Box sx={{ width:754,height:380, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,

@@ -15,6 +15,7 @@ import  img7 from '../../assets/places/gonder.jpg'
 import img8 from '../../assets/places/hamer.jpg'
 import img9 from '../../assets/places/harer.jpg'
 import img10 from '../../assets/places/ArbaMinch.jpeg'
+import { Link } from "react-router-dom";
 
 
 const PartTwo=()=>{
@@ -23,6 +24,9 @@ const PartTwo=()=>{
     const [count,setCount]=useState(1)
     const Places=(props)=>{
       return(
+        <Link to='/detailpage'>
+          <ButtonBase>
+
         <Box sx={{ display:'flex',direction:'row',height:400 }}>
 
            <Box > < img src={props.image} style={{ width:600,height:400 }}/></Box>
@@ -35,6 +39,8 @@ const PartTwo=()=>{
           </Box>
 
           </Box>
+          </ButtonBase>
+          </Link>
       )
     }
     useEffect(()=>{
@@ -51,14 +57,12 @@ const PartTwo=()=>{
       
 
        return(
-        <ButtonBase>
         <Stack
          sx={{ height:780,
          backgroundColor:'#0a0a0a',
          opacity: 0.9,
          color:'white',
          boxShadow:4,
-        //  display:'flex',
          direction:'column',
          textAlign: 'center',
          marginLeft:'20px',
@@ -147,7 +151,6 @@ const PartTwo=()=>{
 
           </Box>
         </Stack>
-        </ButtonBase>
     )
 }
 

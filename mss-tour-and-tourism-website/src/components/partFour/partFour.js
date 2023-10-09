@@ -23,11 +23,15 @@ import img12 from '../../assets/waterfalls/shebelleRiver.jpg'
 import img13 from '../../assets/waterfalls/tekezeRiver.jpg'
 import img14 from '../../assets/waterfalls/zwayLake.jpg'
 import img15 from '../../assets/waterfalls/LakeShala.jpg'
+import { Link } from "react-router-dom";
+import { ButtonBase } from "@material-ui/core";
 
 const PartFour=()=>{
 
   const Cards=(props)=>{
     return(
+     <Link to='/detailpage'>
+      <ButtonBase>
       <Card sx={{width:300,boxShadow:6, '&:hover': {
         boxShadow:7,
        border:3,
@@ -47,6 +51,9 @@ const PartFour=()=>{
       </CardActionArea>
 
     </Card>
+    
+    </ButtonBase>
+    </Link>
     )
   }
   return(
