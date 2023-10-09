@@ -7,6 +7,7 @@ import HeadingOne from "./components/headingOne/headingOne";
 import AddisAbeba from "./components/cityCategory/addisAbeba";
 import DetailPage from "./components/detailPage/detailPage";
 import PostRegistration from "./components/postRegistration/postRegistration";
+import Hotels from "./components/typeCatagory/hotels/hotels";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
                 < Route  exact={true} path='/' element={<Home/>}/>
                 < Route path='/addisabeba' element={<AddisAbeba />}/>
+                < Route path='/hotels' element={<Hotels />}/>
                 < Route path='/detailpage' element={<DetailPage />}/>
                 < Route path='/postregister' element={<PostRegistration />}/>
 

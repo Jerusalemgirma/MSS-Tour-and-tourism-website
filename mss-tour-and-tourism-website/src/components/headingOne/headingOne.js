@@ -29,9 +29,10 @@ const HeadingOne=()=>{
             direction='row'
             spacing={5}   
             alignItems="center"
-            justifyContent="center" >
+            justifyContent="center"
+           >
 
-            <Box  ><h1 style={{ fontSize:'28x' }}><b >Hotel</b></h1> </Box><Divider orientation="vertical" flexItem />
+            <Box  ><Link><ButtonBase><h1 style={{ fontSize:'28x',color:'black' }}><b >Hotel</b></h1></ButtonBase></Link> </Box><Divider orientation="vertical" flexItem />
 
             <Box><h1 style={{ fontSize:'28px' }}><b >Park</b></h1></Box><Divider orientation="vertical" flexItem />
 
