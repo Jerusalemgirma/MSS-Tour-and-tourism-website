@@ -19,33 +19,33 @@ import IconButton from '@mui/material/IconButton';
   const Cardd=(props)=>{
     const [clicked,setClicked]=useState(false)
      return(
-        <div>
+        <div>  
          
-            <Card sx={{ boxShadow:3 ,width:380,borderRadius:3,backgroundColor:'#f1f8f4'}}>
+            <Card sx={{height:410, boxShadow:3 ,width:390,borderRadius:3,backgroundColor:'#f1f8f4'}}>
             
              <CardMedia
-               sx={{ height: 245 }}
+               sx={{ height: 235 }}
                image={props.imagee}
-              // title="green iguana"
             />
-<Link to='detailpage'>
-<ButtonBase>
+       <Link to='detailpage'>
+       <ButtonBase>
           <CardContent sx={{ color:'black' }}>
             
-            <Typography gutterBottom variant="h5" component="div">
-             {props.title} 
-             </Typography>
-            <Typography variant="body2" >
+            <Typography  variant="h5">
+              {props.title} 
+            </Typography>
+            <Typography variant="body" style={{ fontSize:17 }} >
                {props.explanation}
            </Typography>
 
          </CardContent>
          </ButtonBase>
-    </Link>
-         <CardActions>
-           <Button >Read more...</Button>
-           <Button >Share</Button>
-           <IconButton   onClick={()=>setClicked(!clicked)} sx={{ bottom:358,position:'relative' ,left:130,fontSize:"large", borderRadius:'50%',backgroundColor:'white'}}>
+       </Link>
+       <CardActions>
+           <Button  >Read more...</Button>
+           <Button sx={{paddingLeft:15,position:'relative'  }} >Share</Button>
+           <IconButton   onClick={()=>setClicked(!clicked)} 
+           sx={{ bottom:358,position:'relative' ,left:8,fontSize:"large", borderRadius:'50%',backgroundColor:'white'}}>
                {clicked ?  <FavoriteIcon  
                sx={{
 
