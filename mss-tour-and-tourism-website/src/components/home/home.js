@@ -20,7 +20,7 @@ import PartTwo from "../partTwo/partTwo"
 import PartThree from '../partThree/partThree'
 import PartFour from "../partFour/partFour"
 import PartFive from "../partFive/partFive"
-import PartSix from "../partSix/partSix"
+// import PartSix from "../partSix/partSix"
 import PartSeven from "../partSeven/partSeven"
 import PartEight from "../partEight/partEight"
 import PartNine from "../partNine/partNine"
@@ -35,6 +35,45 @@ import PartFifteen from "../partFifteen/partFifteen"
 
 const Home=()=>{
 
+
+  const PartSix=()=>{
+  
+    return(
+    <Box>
+      <Stack>
+      <Box mb={2}pt={4} ml={20} sx={{ height:100,width:1500,boxShadow:4,borderRadius:4,textAlign:'center',fontSize:32,backgroundColor:'#f7fcf9' }}>
+        On this page navigation you can navigate to the whole part on this page 
+        back and front on the page
+      </Box>
+      <Stack direction='row' pl={10} spacing={10}>
+      <Stack>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}> <a href="#part1" style={{ color:'black' }}>random places to visit in Ethiopia?</a> </Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part2" style={{ color:'black' }}>What are the most visited places Ethiopia?</a> </Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part3' style={{ color:'black' }}>  What Hotels there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part4' style={{ color:'black' }}> What Waterfalls are there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part5' style={{ color:'black' }}> What foods are there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part6' style={{ color:'black' }}> different type of marriage in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part12' style={{ color:'black' }}>  What Muesums are there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a  href='#part7' style={{ color:'black' }}> What Heritages of ethiopia are registerd on unesico?</a></Box>
+    </Stack>
+    <Stack>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part8' style={{ color:'black' }}>  what intagible heritage or Events of ethiopia registerd on unesico?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}> <a href='#part13' style={{ color:'black' }}> what events and festival celebration are there in ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part9' style={{ color:'black' }}> What endemic animals and plants are there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part10" style={{ color:'black' }}>TOURISM in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part11" style={{ color:'black' }}>What Parks are there in Ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part14' style={{ color:'black' }}> how many nations and nationatonality are there in ethiopia?</a></Box>
+      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part15' style={{ color:'black' }}> footer of the page</a></Box>
+    </Stack>
+  
+  </Stack>
+  
+  </Stack>
+  
+  
+    </Box>
+    )
+  }
 
     const Footer=()=>{
         return(
@@ -194,7 +233,7 @@ const Home=()=>{
               <Grid item id='part11' sx={{ }}> <PartEleven /> </Grid>
               <Grid item  id='part14' sx={{ }}> <PartFourteen /> </Grid>
               <Grid item sx={{ }}> <PartFifteen /> </Grid>
-              <Grid item sx={{ }}> <Footer /> </Grid>
+              <Grid item id='part15' sx={{ }}> <Footer /> </Grid>
 
            </Grid>
         </Box>
