@@ -36,7 +36,7 @@ export default function Auth(){
               <Typography variant="h5" mb={1} sx={{ textAlign:'center' }}>
                 <PersonIcon sx={{fontSize:65}}/>
                 </Typography>
-              <Typography mb={3}variant="h5" sx={{ textAlign:'center', }}>SignUp  Here</Typography>
+              <Typography mb={3}variant="h5" sx={{ textAlign:'center', }}>{ isSignup? 'SignUp  Here' :'Login Here'}</Typography>
               <form onSubmit={handleSubmit} >
                 <Stack direction='column'spacing={3}  >
                   
