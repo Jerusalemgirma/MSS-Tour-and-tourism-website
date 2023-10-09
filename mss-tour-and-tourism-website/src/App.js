@@ -8,7 +8,7 @@ import AddisAbeba from "./components/cityCategory/addisAbeba";
 import DetailPage from "./components/detailPage/detailPage";
 import PostRegistration from "./components/postRegistration/postRegistration";
 import Hotels from "./components/typeCatagory/hotels/hotels";
-
+import Auth from "./components/auth/auth";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +21,7 @@ function App() {
                 < Route path='/hotels' element={<Hotels />}/>
                 < Route path='/detailpage' element={<DetailPage />}/>
                 < Route path='/postregister' element={<PostRegistration />}/>
+                < Route path='/auth' element={<Auth />}/>
 
                 
            </Routes>

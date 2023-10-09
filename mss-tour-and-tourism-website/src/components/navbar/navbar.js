@@ -11,6 +11,8 @@ import Select from '@mui/material/Select';
 import { useState } from "react";
 import {Link} from 'react-router-dom'
 import { ButtonBase } from "@material-ui/core";
+import PersonIcon from '@mui/icons-material/Person';
+// import IconButton from "@mui/material";
 
 const Navbar=()=>{
     const [city,setCity]=useState('')
@@ -105,7 +107,7 @@ const Navbar=()=>{
                 </Select>
             </FormControl>
               <h3>mihiret desalegn</h3>
-              <Button variant="contained">Logout</Button>
+             <Link to='/auth'><Button variant="contained">SignUp</Button></Link> 
             
             </Stack>
             </Grid>
