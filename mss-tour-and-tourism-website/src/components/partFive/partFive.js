@@ -32,41 +32,36 @@ const PartFive=()=>{
               <Grid container>
                 <Grid item lg={6} xl={6} md={6} sm={6} xs={6} >
                    <Box  >
-                    < img src={props.imageOne} style={{ width:250, height:180,marginLeft:35}} />
-                     <b style={{ fontSize:25,marginLeft:35 }}> {props.nameOne}</b>
+                    < img src={props.imageOne} style={{ width:150, height:130,marginLeft:5}} />
+                     <b style={{ fontSize:20,marginLeft:5 }}> {props.nameOne}</b>
                     </Box> 
                    <Box>
-                    < img src={props.imageTwo} style={{ width:250, height:180,marginLeft:35}}/>
-                    <b style={{ fontSize:25 ,marginLeft:35}}> {props.nameTwo}</b>
+                    < img src={props.imageTwo} style={{ width:150, height:130,marginLeft:5}}/>
+                    <b style={{ fontSize:20 ,marginLeft:5}}> {props.nameTwo}</b>
 
                  </Box> 
 
                 </Grid>
                 <Grid item lg={6} xl={6} md={6} sm={6} xs={6} mb={3}>
                   <Box>
-                    < img src={props.imageThree} style={{ height :400, width:250}}/>
-                    <b style={{ fontSize:25 ,marginLeft:35}}> {props.nameThree}</b>
+                    < img src={props.imageThree} style={{ height :300, width:150}}/>
+                    {/* <b style={{ fontSize:20 ,marginLeft:35}}> {props.nameThree}</b> */}
 
                 </Box> 
                 </Grid>
               </Grid>
             </Box>  
 
-            {/* <Box>
-                <h3> kitfo </h3>
-                <p>kifto is amazing food</p>
-            </Box> */}
 
         </Stack>)
     }
     return(
-        <Box>
-            <h1> some delicious and unique food  and drink in ethiopia</h1>
+        <Box p={5}>
+            <h2> some delicious and unique food  and drink in ethiopia</h2>
             <Grid container>
                 <Grid item lg={12} xl={12} md={12} sm={12} xs={12}> 
-                   <Stack direction='row' 
-                   spacing={2}
-                   >
+
+                   <Stack direction='row' spacing={2} >
                     <FoodCard 
                     imageOne={img1}
                     imageTwo={img2}
@@ -95,9 +90,7 @@ const PartFive=()=>{
                    </Stack>
                 </Grid>
                 <Grid item lg={12} xl={12} md={12} sm={12} xs={12}> 
-                <Stack direction='row' 
-                // spacing={2}
-                >
+                <Stack direction='row' >
                     <FoodCard 
                     imageOne={img11}
                     imageTwo={img15}

@@ -32,19 +32,19 @@ const PartFour=()=>{
     return(
      <Link to='/detailpage'>
       <ButtonBase>
-      <Card sx={{width:300,boxShadow:6, '&:hover': {
+      <Card sx={{width:200,boxShadow:6, '&:hover': {
         boxShadow:7,
        border:3,
        borderColor:'red'} }}>
        <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="110"
           image={props.image}
           alt="water body image"
         />
         <CardContent sx={{ height:50 }}>
-          <Typography  variant="h5" >
+          <Typography  variant="h6" >
            {props.title}
           </Typography>
         </CardContent>
@@ -57,22 +57,22 @@ const PartFour=()=>{
     )
   }
   return(
-    <Grid container p={4} sx={{ backgroundColor:'orange' }} > 
+    <Grid container p={3} sx={{ backgroundColor:'orange' ,width:1330}} > 
 
       <Grid item lg={12} xl={12} md={12} sm={12} xs={12}> 
-        <h1> There is alot water falls in ethiopia  </h1>
+        <h2> There is alot water falls in ethiopia  </h2>
       </Grid>
 
       <Grid item lg={6} xl={6} md={6} sm={6} xs={6}>
-         <Box  sx={{ width:830 }}>
-            <img  src={img1} style={{  width:830  }}/>
+         <Box  sx={{ width:570 }}>
+            <img  src={img1} style={{  width:570  }}/>
         </Box>
       </Grid>
 
       <Grid item lg={6} xl={6} md={6} sm={6} xs={6} >
          <Box textAlign='center' >
             <h1>Blue Nile</h1>
-            <p style={{ fontSize:27 }}>The Blue Nile originates at 
+            <p style={{ fontSize:23 }}>The Blue Nile originates at 
               Lake Tana in Ethiopia (where it is called the Abay River).
                The river flows generally south before entering a
                 canyon about 400 km (250 mi) long, about 30 km (19 mi) from Lake Tana, 
@@ -88,27 +88,26 @@ const PartFour=()=>{
       <Grid item lg={12} xl={12} md={12} sm={12} xs={12}><h1>see more water bodies </h1></Grid>
       <Grid item lg={12} xl={12} md={12} sm={12} xs={12}>
         <Stack direction='row' spacing={1} scrollButtons  variant="scrollable"
-             sx={{ width:1720 }}>
+             sx={{ width:1320 }}>
            <Cards image={img2} title='Awash River'/>
            <Cards image={img3} title='Abaya and ChamoLake'/>
            <Cards image={img4} title='Afdera and Asale Lake'/>
            <Cards image={img5} title='Angereb River'/>
            <Cards image={img6} title='Baro-Akobo River'/>
            <Cards image={img7} title='Hawasa Lake'/>
-           <Cards image={img8} title='Lake Langano'/>
+           
 
         </Stack>
       </Grid>
       <Grid item lg={12} xl={12} md={12} sm={12} xs={12}>
       <Stack mt={2} direction='row' spacing={1} scrollButtons  variant="scrollable"
-             sx={{ width:1720 }}>
+             sx={{ width:1320 }}>
            <Cards image={img9} title='lake Tana'/>
            <Cards image={img10} title='Mereb River'/>
            <Cards image={img11} title='Omo River'/>
            <Cards image={img12} title='Shebelle River'/>
            <Cards image={img13} title='Tekeze River'/>
            <Cards image={img14} title='Zway Lake'/>
-           <Cards image={img15} title='Lake Shala'/>
 
 
         </Stack>

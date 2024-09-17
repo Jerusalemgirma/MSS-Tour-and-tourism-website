@@ -87,38 +87,37 @@ const PartNine=()=>{
 
     
     return(
-        <Box  >
+        <Box  sx={{ width:1330}} >
             <h1>There are many amazing endemic animal and plants in Ethiopia</h1>
-          { (count ===1) && <Stack pl={7} pr={7} sx={{ boxShadow:3 }} >
-            <h1 style={{ textAlign:'center', boxShadow:1,paddingLeft:20,paddingRight:20 }}> Page {count}</h1>
-            <Stack direction='row' spacing={1}>
-                <Box> <img src={img10} style={{ width:400}} /> <h3> Ethiopian Highland Hare</h3></Box>
-
-                <Box > <img src={img2} style={{ width:420,paddingTop:60 }}/> <h3> Yellow Fronted Parrot</h3></Box>
-                <Box> <img src={img3} style={{ width:410 }} /> <h3> Bale Mountains Vervet</h3></Box>
-                <Box> <img src={img4} style={{ width:430,paddingTop:60 }} /> <h3>White-tailed swallow</h3></Box>
-
-            </Stack>
-            <Stack direction='row'spacing={1}>
-                <Box> <img src={img5} style={{ width:420 }} /> <h3> Big Headed African Mole Rat</h3></Box>
-                <Box> <img src={img6} style={{ width:410 }} /> <h3> waliaIbex</h3></Box>
-                <Box> <img src={img7} style={{ width:420 }} /> <h3>Black-clawed brush-furred rat</h3></Box>
-                <Box> <img src={img8} style={{ width:410 }}  /> <h3>Swayne</h3></Box>
+          { (count ===1) && <Stack pl={5}  pr={2} sx={{ boxShadow:3 }} >
+            <h1 style={{ textAlign:'center', boxShadow:1,paddingRight:20 }}> Page {count}</h1>
+            <Stack direction='row'  spacing={1}>
+                <Box>  <img src={img10} style={{ width:270,height:300 }} /> <h3> Ethiopian Highland Hare</h3></Box>
+                <Box> <img src={img2} style={{ width:300,paddingTop:40 }}/> <h3> Yellow Fronted Parrot</h3></Box>
+                <Box>  <img src={img3} style={{ width:305, height:300 }} /> <h3> Bale Mountains Vervet</h3></Box>
+                <Box>  <img src={img4} style={{ width:300,paddingTop:40 }} /> <h3>White-tailed swallow</h3></Box>
 
             </Stack>
             <Stack direction='row'spacing={1}>
-                <Box> <img src={img25} style={{ width:420 }} /> <h3> Hagenia abyssinica</h3></Box>
-                <Box> <img src={img26} style={{ width:410 }} /> <h3> Acacia</h3></Box>
-                <Box> <img src={img27} style={{ width:420 }} /> <h3>Ekebergia capensis</h3></Box>
-                <Box> <img src={img28} style={{ width:410 }}  /> <h3>Teff</h3></Box>
+                <Box> <img src={img5} style={{ width:310 }} /> <h3> Big Headed African Mole Rat</h3></Box>
+                <Box> <img src={img6} style={{ width:310 }} /> <h3> waliaIbex</h3></Box>
+                <Box> <img src={img7} style={{ width:310 }} /> <h3>Black-clawed brush-furred rat</h3></Box>
+                <Box> <img src={img8} style={{ width:310 }}  /> <h3>Swayne</h3></Box>
+
+            </Stack>
+            <Stack direction='row'spacing={1}>
+                <Box> <img src={img25} style={{ width:320 }} /> <h3> Hagenia abyssinica</h3></Box>
+                <Box> <img src={img26} style={{ width:310 }} /> <h3> Acacia</h3></Box>
+                <Box> <img src={img27} style={{ width:320 }} /> <h3>Ekebergia capensis</h3></Box>
+                <Box> <img src={img28} style={{ width:310 }}  /> <h3>Teff</h3></Box>
 
             </Stack>
             
             <Stack direction='row' spacing={1}>
-                <Box> <img src={img9} style={{ width:400 }} /> <h3> Blue-wingedGoose</h3></Box>
-                <Box> <img src={img11} style={{ width:400 }} /> <h3>Somali Wild Ass</h3></Box>
-                <Box> <img src={img12} style={{ width:400 }} /> <h3>Spot-breasted Lapwing.</h3></Box>
-                <Box > <img src={img1} style={{ width:410 }} /> <h3> Abyssinian longclaw</h3></Box>
+                <Box> <img src={img9} style={{ width:300 }} /> <h3> Blue-wingedGoose</h3></Box>
+                <Box> <img src={img11} style={{ width:300 }} /> <h3>Somali Wild Ass</h3></Box>
+                <Box> <img src={img12} style={{ width:300 }} /> <h3>Spot-breasted Lapwing.</h3></Box>
+                <Box > <img src={img1} style={{ width:310 }} /> <h3> Abyssinian longclaw</h3></Box>
 
             </Stack>
             <Stack  direction='row' ml={90} pl={7} sx={{ boxShadow:4 ,width:160,backgroundColor:'#EFF0F8' }}> 
@@ -130,9 +129,7 @@ const PartNine=()=>{
         <h1 style={{ textAlign:'center', boxShadow:1,paddingLeft:20,paddingRight:20 }}> Page {count}</h1>
             <Stack direction='row' spacing={1}>
                 <Box> <img src={img16} style={{ width:430 }} /> <h2>Gelada</h2></Box>
-
                 <Box> <img src={img18} style={{ width:410 ,paddingTop:40}} /> <h2> Harnessed bushbuck</h2></Box>
-
                 <Box> <img src={img22} style={{ width:400 }} /> <h3>Salvadoris seedeater</h3></Box>
                 <Box> <img src={img13} style={{ width:400 }} /> <h2>Ruspolis turaco</h2></Box>
 
@@ -142,7 +139,6 @@ const PartNine=()=>{
                 <Box> <img src={img18} style={{ width:410 }} /> <h2> Harnessed bushbuck</h2></Box>
                 <Box> <img src={img15} style={{ width:410 }} /> <h2> Ptychadena neumanni</h2></Box>
 
-                {/* <Box> <img src={img19} style={{ width:420 }} /> <h2>Leptopelis gramineus</h2></Box> */}
                 <Box> <img src={img20} style={{ width:410 }}  /> <h2>HarwoodsSpurfowl</h2></Box>
 
             </Stack>
@@ -162,7 +158,7 @@ const PartNine=()=>{
                 <Box > <img src={img24} style={{ width:410 }} /> <h3> Moorland francolin</h3></Box>
 
             </Stack>
-            <Stack  direction='row' ml={90} pl={7} sx={{ boxShadow:3 ,width:160,backgroundColor:'#EFF0F8' }}> 
+            <Stack  direction='row' pl={7} sx={{ boxShadow:3 ,width:160,backgroundColor:'#EFF0F8' }}> 
                      <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
                      <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
             </Stack>

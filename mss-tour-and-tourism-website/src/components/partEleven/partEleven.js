@@ -40,16 +40,15 @@ const PartEleven=()=>{
         return(
           <Link to='detailpage'>
         <ButtonBase>
-          <Box sx={{ border:1,borderRadius:'5%', width:310,height:480,boxShadow:4,
+          <Box sx={{ border:1,borderRadius:'5%', width:250,height:380,boxShadow:4,
             '&:hover': {
               boxShadow:8,
               border:2,
               borderColor:'red'
             },
         }}> 
-            <img src={props.imagee} style={{ width:308,height:360 , border:1,borderRadius:'5%',}}/>
+            <img src={props.imagee} style={{ width:250,height:250 , border:1,borderRadius:'5%',}}/>
             <h2 style={{ paddingTop:15 ,color:'black'}}> {props.title} </h2>
-            {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
         </Link>
@@ -59,9 +58,9 @@ const PartEleven=()=>{
         <Box p={2}>
        <h1> some parks in ethiopia which contain alot life</h1>
         
-         <Stack direction='column' spacing={1} pl={5}>
+         <Stack direction='column' spacing={1} pl={1}>
 
-                <Stack direction='row' spacing={3} >
+                <Stack direction='row' spacing={1} >
                      < Cardd imagee={img1}
                                 title='Bale Mountains National Park'
                     />
@@ -79,7 +78,7 @@ const PartEleven=()=>{
                
                 </Stack>
 
-                <Stack direction='row' spacing={3}>
+                <Stack direction='row' spacing={1}>
                      < Cardd imagee={img6}
                                 title='Nech Sar National Park'
                     />

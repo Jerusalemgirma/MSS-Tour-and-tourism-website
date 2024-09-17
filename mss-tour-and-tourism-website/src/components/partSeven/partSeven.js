@@ -80,22 +80,22 @@ const PartSeven=()=>{
           
 
                
-            <Stack direction='row'  p={3} sx={{boxShadow:4,backgroundColor:'#EBF5F6' }} >
-              <Box  sx={{ textAlign:"center"}}>
+            <Stack direction='row'  py={3} px={2} justifyContent='space-between' sx={{boxShadow:4,backgroundColor:'#EBF5F6' ,width:1300}} >
+              <Box  sx={{ textAlign:"center" ,width:650}}>
                 
                     <h1>{props.name}</h1>
                     <h6 style={{ fontSize:20 }}>{props.location}</h6>
-                    <p style={{ marginBottom:203 ,fontSize:30,marginLeft:30,marginRight:30}}>{props.detail}</p>
+                    <p style={{ marginBottom:40 ,fontSize:25,marginLeft:3,marginRight:3}}>{props.detail}</p>
                   <Stack direction='row' spacing={1}>
-                    <img src={props.image5} style={{ width:270,height:240 }}/>
-                    <img src={props.image3 } style={{ width:270,height:240 }}/>
-                    <img src={props.image4} style={{ width:270,height:240 }}/>
-                    <img src={props.image2} style={{ width:270,height:240}}/>
+                    <img src={props.image5} style={{ width:160,height:150 }}/>
+                    <img src={props.image3 } style={{ width:160,height:150 }}/>
+                    <img src={props.image4} style={{ width:160,height:150 }}/>
+                    <img src={props.image2} style={{ width:160,height:150}}/>
                  </Stack>
              </Box>
 
-            <Box sx={{ width:650 }}>
-             <img src={props.image1} style={{ width:640 ,height:800}}/>
+            <Box sx={{ width:550 }}>
+             <img src={props.image1} style={{ width:500 ,height:500}}/>
             </Box>
 
         </Stack>
@@ -104,7 +104,7 @@ const PartSeven=()=>{
     )}
     return(
         <Box >
-        <h1> Ethiopia has many unesico registerd heritage</h1>
+        <h2> Ethiopia has many unesico registerd heritage</h2>
        { (count===1 )&& <Cardd 
            name='Aksum'
            location='Around Tigray, Ethiopia'
@@ -112,8 +112,7 @@ const PartSeven=()=>{
            It's known for its tall, carved obelisks, relics of the ancient Kingdom of Aksum.
             Most are in the northern Stelae Park, including a huge fallen pillar, now in pieces. 
             Centuries-old St. Mary of Zion is a Christian church and pilgrimage 
-            site believed to have housed the biblical Ark of the Covenant.
-            The neighboring Chapel of the Tablet is said to contain the Ark today."
+            "
             image1={img1}
             image2={img2}
             image3={img3}
@@ -129,10 +128,7 @@ const PartSeven=()=>{
            detail=" The Fasil Ghebbi is a fortress located in Gondar, Amhara Region, 
            Ethiopia. It was founded in the 17th century by Emperor Fasilides and was the home of Ethiopian emperors. Its unique 
            architecture shows diverse influences including Hindu, Arab, 
-           and Baroque characteristicsThe fortress was the residence of the Ethiopian 
-           emperors during the 16th and 17th century. The city remains,
-            which feature buildings with Hindu and Arab influences, 
-           were later remodelled with Baroque-style architecture by Jesuit missionaries"
+           "
             image1={img6}
             image2={img7}
             image3={img8}
@@ -149,8 +145,7 @@ const PartSeven=()=>{
             the country on a plateau with deep gorges surrounded by deserts and savannah. 
             The walls surrounding this sacred Muslim city were built between the 13th and 
             16th centuries. Harar Jugol, said to be the fourth holiest city of Islam, numbers
-             82 mosques, three of which date from the 10th century, and 102 shrines, but the townhouses with their exceptional interior design constitute the most spectacular part of Harar's cultural heritage. The impact of African and Islamic traditions on the development of the town's
-            building types and urban layout make for its particular character and uniqueness."
+             82 mosques, three of which "
             image1={img11}
             image2={img12}
             image3={img13}
@@ -166,8 +161,7 @@ const PartSeven=()=>{
            walled terraces and fortified settlements in the Konso highlands 
            of Ethiopia. It constitutes a spectacular example of a living cultural
             tradition stretching back 21 generations (more than 400 years) adapted to
-             its dry hostile environment. The landscape demonstrates the shared values, social cohesion and engineering knowledge of its communities. The site also features anthropomorphic wooden statues - grouped to represent respected members of their communities and particularly heroic events - which are an exceptional living testimony to funerary traditions that are on the verge of disappearing. 
-           Stone steles in the towns express a complex system of marking the passing of generations of leaders."
+             its dry hostile environment. "
             image1={img16}
             image2={img17}
             image3={img18}

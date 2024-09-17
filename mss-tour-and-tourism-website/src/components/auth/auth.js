@@ -24,12 +24,12 @@ export default function Auth(){
     }
 
     return(
-        <Box sx={{color:'black',backgroundColor:'#dafdeb'}}  pr={37} pl={27} pt={7}  pb={10}>
+        <Box sx={{color:'black',backgroundColor:'#dafdeb'}}  pr={12} pl={10} pt={7}  pb={10}>
 
-        <Stack   sx={{boxShadow:5}} direction='row' spacing={9} bgcolor="#ebf5f0" >
+        <Stack   sx={{boxShadow:5}} direction='row' spacing={6} bgcolor="#ebf5f0" >
 
             <Box   > 
-                <img src={imagee} style={{height:765,width:610}}  alt='photo'/>
+                <img src={imagee} style={{height:765,width:550}}  alt='photo'/>
             </Box>
 
             <Box   pt={4} sx={{ width:500, }} > 

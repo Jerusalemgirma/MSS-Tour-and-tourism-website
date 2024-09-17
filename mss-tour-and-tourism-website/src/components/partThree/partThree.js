@@ -14,19 +14,19 @@ const PartThree=()=>{
    
 
        return(
-        <Stack direction='column' pl={12} pr={12} spacing={2} sx={{ color:'white' }}>
-        <h1 style={{ color:'black' }}> enjoy amazing hotels in ethiopia</h1>
-         <Stack  direction='row' spacing={2} sx={{ marginLeft:15 }}>
+        <Stack direction='column' pl={12} pr={12} spacing={2} sx={{ color:'white', }}>
+         <h2 style={{ color:'black' }}> enjoy amazing hotels in ethiopia</h2>
+         <Stack  direction='row' spacing={2} sx={{ paddingLeft:15 }}>
           <Link to='/detailpage'>
            <ButtonBase>
-             <Box sx={{ width:753,height:380, border:0.5 , borderRadius:'5%',
+             <Box sx={{ width:500,height:300, border:0.5 , borderRadius:'5%',
               '&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },
-        }}>
-                <img src={img1} style={{width:753, height:380, border:0.5 , borderRadius:'5%',
+               }}>
+                <img src={img1} style={{width:500, height:300, border:0.5 , borderRadius:'5%',
                 '&:hover': {
                   boxShadow:6,
                  border:2,
@@ -35,74 +35,83 @@ const PartThree=()=>{
 
                 },
                }}/>
-                <h1  style={{ position:'relative',bottom:380 , color:'white',}}>Sheraton Hotel</h1>
+                <h1  style={{ position:'relative',bottom:300 , color:'white',}}>Sheraton Hotel</h1>
 
              </Box>
-            </ButtonBase>
-            </Link>
-            <ButtonBase>
-            <Box sx={{ width:754,height:380, border:0.5 , borderRadius:'5%','&:hover': {
+             </ButtonBase>
+          </Link>
+          <Link  to='/detailpage'>
+          <ButtonBase>
+            <Box sx={{ width:500,height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}>
-                <img src={img3} style={{width:754, height:380, border:0.5 , borderRadius:'5%' ,'&:hover': {
+                <img src={img3} style={{width:500, height:300, border:0.5 , borderRadius:'5%' ,'&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}/>
-                <h1  style={{ position:'relative',bottom:380}}>Taytu Hotel</h1>
+                <h1  style={{ position:'relative',bottom:300,color:'white',}}>Taytu Hotel</h1>
 
-            </Box> 
+             </Box> 
             </ButtonBase>
+          </Link>
+        
          </Stack>
 
          <Stack direction='row' spacing={2} >
-         <ButtonBase>
-           <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%','&:hover': {
+         <Link  to='/detailpage'>
+          <ButtonBase>
+           <Box sx={{ width:400,height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}>
-                <img src={img4} style={{width:500, height:400, border:0.5 , borderRadius:'5%','&:hover': {
+                <img src={img4} style={{width:400, height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                }, }}/>
-                <h1  style={{ position:'relative',bottom:400}}>Daamat Hotel</h1>
+                <h1  style={{ position:'relative',bottom:300,color:'white'}}>Daamat Hotel</h1>
 
             </Box>
             </ButtonBase>
+            </Link>
+            <Link  to='/detailpage'>
             <ButtonBase>
-            <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%','&:hover': {
+            <Box sx={{ width:400,height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}>
-                <img src={img2} style={{width:500, height:400, border:0.5 , borderRadius:'5%','&:hover': {
+                <img src={img2} style={{width:400, height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                }, }}/>
-                <h1  style={{ position:'relative',bottom:400}}>Skylight Hotel</h1>
+                <h1  style={{ position:'relative',bottom:300,color:'white'}}>Skylight Hotel</h1>
 
             </Box>
             </ButtonBase>
+            </Link>
+            <Link  to='/detailpage'>
             <ButtonBase>
-            <Box sx={{ width:500,height:400, border:0.5 , borderRadius:'5%','&:hover': {
+            <Box sx={{ width:400,height:300, border:0.5 , borderRadius:'5%','&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}>
-                <img src={img5} style={{width:500, height:400, border:0.5 , borderRadius:'5%' ,'&:hover': {
+                <img src={img5} style={{width:400, height:300, border:0.5 , borderRadius:'5%' ,'&:hover': {
                  boxShadow:6,
                 border:2,
                 borderColor:'red'
                },}}/>
-                <h1  style={{ position:'relative',bottom:400}}>Hilton Hotel</h1>
+                <h1  style={{ position:'relative',bottom:300,color:'white'}}>Hilton Hotel</h1>
 
             </Box>
             </ButtonBase>
+            </Link  >
          </Stack>
 
          <Box>

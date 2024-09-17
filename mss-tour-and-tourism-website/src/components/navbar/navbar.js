@@ -27,7 +27,7 @@ const Navbar=()=>{
    }
   
     return(
-          <Grid  p={3} pr={7} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
+          <Grid  p={2} pr={3} pl={4} container sx={{ boxShadow: 4 ,backgroundColor:'#cbecdb' }} >
 
             <Grid item  lg={4}  sx={{ }}>
             <Link to='/'>
@@ -36,7 +36,7 @@ const Navbar=()=>{
                 <Box
                 component="img"
                 sx={{
-                 height: 90,
+                 height: 80,
                  width:70,
                  marginLeft:4,
                  marginRight:3
@@ -45,7 +45,7 @@ const Navbar=()=>{
               src={img1} 
             />
 
-               <h1 style={{ color:'black' }}>Visit Ethiopia</h1>
+               <h1 style={{ color:'black', fontFamily:'serif' }}>Visit Ethiopia</h1>
               </Stack> 
               
               </ButtonBase>
@@ -53,26 +53,26 @@ const Navbar=()=>{
             </Grid>
 
             <Grid item lg={8}>
-             <Stack direction='row'  justifyContent='space-evenly' sx={{ marginLeft:'16px' }}>
+             <Stack direction='row'  justifyContent='space-evenly' sx={{ marginLeft:'13px' }}>
               
-              <FormControl sx={{ width:'165px' }} >
-                <InputLabel sx={{ fontSize:18,fontWeight:35, }} >Select City</InputLabel>
+              <FormControl sx={{ width:'145px' }} >
+                <InputLabel sx={{ fontSize:16,fontWeight:35 }} >Select City</InputLabel>
                  <Select
                     value={city}
-                    sx={{border:'2px solid black',borderRadius:50 ,color:'black'}}
+                    sx={{border:'1px solid black',borderRadius:50 ,color:'black' ,height:45}}
                     onChange={(e)=>handleCityChange(e)}               
                 >
-                    <MenuItem value='Tigray'>Tigray</MenuItem>
-                    <MenuItem value='Afar'>Afar</MenuItem>
-                    <MenuItem value='Amhara'>Amhara</MenuItem>
-                    <MenuItem value='Oromia'>Oromia</MenuItem>
-                    <MenuItem value='Somali'> Somali</MenuItem>
-                    <MenuItem value='Benishangul-Gumuz'> Benishangul-Gumuz</MenuItem>
-                    <MenuItem value='Gambella'>  Gambella</MenuItem>
-                    <MenuItem value='Harari'>Harari</MenuItem>
-                    <MenuItem value='SNNPR'>SNNPR</MenuItem>
-                    <MenuItem value='AddisAbaba'> <Link to='addisabeba' sx={{ color:'black' }}>Addis Ababa</Link> </MenuItem>
-                    <MenuItem value='DireDawa'>Dire Dawa</MenuItem>
+                    <MenuItem value='Tigray'><Link to='addisabeba' style={{ color:'black' }}>Tigray </Link></MenuItem>
+                    <MenuItem value='Afar'><Link to='addisabeba' style={{ color:'black' }}>Afar </Link></MenuItem>
+                    <MenuItem value='Amhara'><Link to='addisabeba' style={{ color:'black' }}>Amhara </Link></MenuItem>
+                    <MenuItem value='Oromia'><Link to='addisabeba' style={{ color:'black' }}>Oromia</Link></MenuItem>
+                    <MenuItem value='Somali'><Link to='addisabeba' style={{ color:'black' }}> Somali </Link></MenuItem>
+                    <MenuItem value='Benishangul-Gumuz'><Link to='addisabeba' style={{ color:'black' }}> Benishangul-Gumuz </Link></MenuItem>
+                    <MenuItem value='Gambella'> <Link to='addisabeba' style={{ color:'black' }}>Gambella</Link></MenuItem>
+                    <MenuItem value='Harari'><Link to='addisabeba' style={{ color:'black' }}>Harari</Link> </MenuItem>
+                    <MenuItem value='SNNPR'><Link to='addisabeba' style={{ color:'black' }}>SNNPR </Link></MenuItem>
+                    <MenuItem value='AddisAbaba'> <Link to='addisabeba' style={{ color:'black' }}>Addis Ababa</Link> </MenuItem>
+                    <MenuItem value='DireDawa'><Link to='addisabeba' style={{  textDecoration:'none' }}>Dire Dawa</Link></MenuItem>
 
 
 
@@ -81,22 +81,22 @@ const Navbar=()=>{
 
               <form>
               
-                 <Box sx={{ border:'3px solid black' , borderRadius:50}}>                 
+                 <Box sx={{ border:'1px solid black' , borderRadius:50}}>                 
                    <InputBase
-                   sx={{ paddingLeft:2,paddingBottom:1.5,paddingTop:1 }}
+                   sx={{ paddingLeft:2,paddingBottom:1,paddingTop:1 }}
                     placeholder=" Search Places"
                   />
-                  <IconButton type="submit" sx={{ p: '10px' }} >
+                  <IconButton type="submit" sx={{ p: '3px',paddingLeft:'1px' }} >
                     <SearchIcon />
                   </IconButton>
                     
                  </Box>
               </form>
 
-              <FormControl sx={{ width:'180px' }} >
+              <FormControl sx={{ width:'160px' }} >
                 <InputLabel  >Language</InputLabel>
                  <Select
-                   sx={{ border:'2px solid black' , borderRadius:50 }}
+                   sx={{ border:'1px solid black' , borderRadius:50, height:48 }}
                     value={language}
                     label="Language"
                     onChange={handleLanguageChange}
@@ -107,7 +107,7 @@ const Navbar=()=>{
                 </Select>
             </FormControl>
               <h3>mihiret desalegn</h3>
-             <Link to='/auth'><Button variant="contained">SignUp</Button></Link> 
+             <Link to='/auth'  ><Button sx={{ marginTop:1 }} variant="contained">SignUp</Button></Link> 
             
             </Stack>
             </Grid>

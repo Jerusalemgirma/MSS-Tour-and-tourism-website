@@ -45,7 +45,7 @@ import IconButton from '@mui/material/IconButton';
            <Button  >Read more...</Button>
            <Button sx={{paddingLeft:15,position:'relative'  }} >Share</Button>
            <IconButton   onClick={()=>setClicked(!clicked)} 
-           sx={{ bottom:358,position:'relative' ,left:8,fontSize:"large", borderRadius:'50%',backgroundColor:'white'}}>
+           sx={{ bottom:358,position:'relative' ,left:15,fontSize:"large", borderRadius:'50%',backgroundColor:'white'}}>
                {clicked ?  <FavoriteIcon  
                sx={{
 

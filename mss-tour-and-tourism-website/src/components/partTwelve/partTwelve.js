@@ -29,16 +29,15 @@ const PartTwelve=()=>{
           <Link to='/detailpage'>
           
         <ButtonBase>
-          <Box sx={{ border:1,borderRadius:'5%', width:310,height:420,boxShadow:4,
+          <Box sx={{ border:1,borderRadius:'5%', width:250,height:320,boxShadow:4,
             '&:hover': {
               boxShadow:8,
               border:2,
               borderColor:'red'
             },
         }}> 
-            <img src={props.imagee} style={{ width:308,height:320 , border:1,borderRadius:'5%',}}/>
+            <img src={props.imagee} style={{ width:250,height:220 , border:1,borderRadius:'5%',}}/>
             <h2 style={{ paddingTop:12,color:'black' }}> {props.title} </h2>
-            {/* <p> {props.explanation}</p> */}
         </Box>
         </ButtonBase>
         </Link >
@@ -48,7 +47,7 @@ const PartTwelve=()=>{
     return(
 
         <Box p={2}>
-        <h1> Some Museum in Ethiopia which </h1>
+        <h2> Some Museum in Ethiopia which </h2>
 
          
           <Stack direction='column' spacing={1} pl={5}>
@@ -65,9 +64,7 @@ const PartTwelve=()=>{
                    < Cardd imagee={img4}
                             title='science museum'
                   />
-                  < Cardd imagee={img5}
-                                 title='Unity Park'
-                 />
+                  
                 
                  </Stack>
  
@@ -83,9 +80,7 @@ const PartTwelve=()=>{
                    < Cardd imagee={img9}
                             title='Ethnological Museum'
                   />
-                  < Cardd imagee={img10}
-                                 title='The Zoological Natural History Museum'
-                 />
+                  
                  
                  </Stack>
  
@@ -102,6 +97,10 @@ const PartTwelve=()=>{
 
                  < Cardd imagee={img13}
                                  title='Zoma Museum Mekanisa'
+                                 
+                 />
+                 < Cardd imagee={img10}
+                                 title='The Zoological Natural History Museum'
                  />
                  </Stack>
  

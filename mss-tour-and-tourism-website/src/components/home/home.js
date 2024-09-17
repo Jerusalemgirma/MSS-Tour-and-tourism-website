@@ -41,29 +41,29 @@ const Home=()=>{
     return(
     <Box>
       <Stack>
-      <Box mb={2}pt={4} ml={20} sx={{ height:100,width:1500,boxShadow:4,borderRadius:4,textAlign:'center',fontSize:32,backgroundColor:'#f7fcf9' }}>
+      <Box mb={2} pt={2} ml={10} sx={{ height:40,width:1200,boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25,backgroundColor:'#f7fcf9' }}>
         On this page navigation you can navigate to the whole part on this page 
         back and front on the page
       </Box>
-      <Stack direction='row' pl={10} spacing={10}>
-      <Stack>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}> <a href="#part1" style={{ color:'black' }}>random places to visit in Ethiopia?</a> </Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part2" style={{ color:'black' }}>What are the most visited places Ethiopia?</a> </Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part3' style={{ color:'black' }}>  What Hotels there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part4' style={{ color:'black' }}> What Waterfalls are there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part5' style={{ color:'black' }}> What foods are there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part6' style={{ color:'black' }}> different type of marriage in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part12' style={{ color:'black' }}>  What Muesums are there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a  href='#part7' style={{ color:'black' }}> What Heritages of ethiopia are registerd on unesico?</a></Box>
+      <Stack direction='row' pl={10} spacing={7}>
+      <Stack spacing={2}>
+      <Box pl={5} pr={5} sx={{ height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}> <a href="#part1" style={{ color:'black' }}>random places to visit in Ethiopia?</a> </Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href="#part2" style={{ color:'black' }}>What are the most visited places Ethiopia?</a> </Box>
+      <Box pl={5} pr={5}  sx={{height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part3' style={{ color:'black' }}>  What Hotels there in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part4' style={{ color:'black' }}> What Waterfalls are there in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{height:40, width:400,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part5' style={{ color:'black' }}> What foods are there in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part6' style={{ color:'black' }}> different type of marriage in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400, borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part12' style={{ color:'black' }}>  What Muesums are there in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a  href='#part7' style={{ color:'black' }}> What Heritages of ethiopia are registerd on unesico?</a></Box>
     </Stack>
-    <Stack>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part8' style={{ color:'black' }}>  what intagible heritage or Events of ethiopia registerd on unesico?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}> <a href='#part13' style={{ color:'black' }}> what events and festival celebration are there in ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part9' style={{ color:'black' }}> What endemic animals and plants are there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part10" style={{ color:'black' }}>TOURISM in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href="#part11" style={{ color:'black' }}>What Parks are there in Ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part14' style={{ color:'black' }}> how many nations and nationatonality are there in ethiopia?</a></Box>
-      <Box pl={10} pr={10} sx={{ height:55, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:25 ,backgroundColor:'#ecf6f1'}}><a href='#part15' style={{ color:'black' }}> footer of the page</a></Box>
+    <Stack spacing={2}>
+      <Box pl={5} pr={5}  sx={{ height:55,width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part8' style={{ color:'black' }}>  what Events of ethiopia registerd on unesico?</a></Box>
+      <Box pl={5} pr={5}  sx={{  height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}> <a href='#part13' style={{ color:'black' }}> what events and festival  are there </a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part9' style={{ color:'black' }}> What endemic animals and plants are there</a></Box>
+      <Box pl={5} pr={5}  sx={{  height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href="#part10" style={{ color:'black' }}>TOURISM in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{  height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href="#part11" style={{ color:'black' }}>What Parks are there in Ethiopia?</a></Box>
+      <Box pl={5} pr={5}  sx={{ height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part14' style={{ color:'black' }}> how many nationatonality are there ?</a></Box>
+      <Box ppl={5} pr={5}  sx={{  height:40, width:400, boxShadow:4,borderRadius:4,textAlign:'center',fontSize:23 ,backgroundColor:'#ecf6f1'}}><a href='#part15' style={{ color:'black' }}> footer of the page</a></Box>
     </Stack>
   
   </Stack>
@@ -77,7 +77,7 @@ const Home=()=>{
 
     const Footer=()=>{
         return(
-            <Box>
+            <Box sx={{ width:1300}} >
                
                 <Stack >
                     <Box 
@@ -85,11 +85,11 @@ const Home=()=>{
                         backgroundColor:'#131414',
                         color:'white'
                         }} 
-                    p={5}>
+                    p={3}>
                        <h1>Contact Us</h1>
                         <form  >
-                            <Stack direction='column' spacing={2} >
-                              <Stack direction='row'  spacing={5}>
+                            <Stack direction='column' spacing={1} >
+                              <Stack direction='row'  spacing={3}>
                                <Box >
                                 <h3>Enter Full name</h3>
                                 <TextField 
@@ -152,13 +152,13 @@ const Home=()=>{
     
     
     
-                    <Box p={8} sx={{backgroundColor:'#b4e2cb' }}>
+                    <Box p={4} sx={{backgroundColor:'#b4e2cb' }}>
                        
-                        <Stack direction='row' spacing={16}>
+                        <Stack direction='row' spacing={10}>
     
-                        <Box sx={{ width:500 }}>
+                        <Box sx={{ width:450 }}>
                             <h1>About Us</h1>
-                            <p style={{ fontSize:25 ,fontWeight:15}}>
+                            <p style={{ fontSize:22 ,fontWeight:15}}>
                                 Visit Ethiopia website is website which try to show all over ethiopia from the geographical
                                 appearance  to wondefull events and festival celebration .it also give information and hint
                                 about most visted places, amazing park and muesums , waterfalls and volcanos ,mountain and plains,endemic plant and 
@@ -166,8 +166,8 @@ const Home=()=>{
                             </p>    
                         </Box>
                         <Box> 
-                        <h1>Contact inforation</h1>
-                            <p style={{ fontSize:25 ,fontWeight:15}}>
+                        <h2>Contact inforation</h2>
+                            <p style={{ fontSize:22 ,fontWeight:15}}>
                             <a href='#p' style={{ color:'black',textDecoration:'none' }}> <LocalPhoneIcon color="primary" fontSize="large" /> PhoneNumber</a><br/>
                             <a href='#e' style={{ color:'black',textDecoration:'none' }}><EmailIcon color="primary" fontSize="large" /> Email</a> <br/>
                             <a href='#f' style={{ color:'black',textDecoration:'none' }}><FacebookIcon color="primary" fontSize="large" /> Facebook </a><br/>
@@ -179,8 +179,8 @@ const Home=()=>{
     
     
                         </Box>
-                        <Box sx={{ width:450 }}>
-                           <h1 >On page Route</h1> 
+                        <Box sx={{ width:400 }}>
+                           <h2 >On page Route</h2> 
                         <b style={{fontSize:20  }}>
                             <a href="#part1" style={{ color:'black' }}>random places to visit in Ethiopia?</a><br/> 
                             <a href="#part2" style={{ color:'black' }}>What are the most visited places Ethiopia?</a><br/> 
@@ -212,12 +212,11 @@ const Home=()=>{
 
 
     return(
-        <Box >
-           <Grid container direction='column' spacing={5}>
+        <Box  sx={{ }} >
+           <Grid container direction='column' spacing={7}>
 
 
-              {/* <Grid item sx={{  }} ><Navbar /></Grid>
-              <Grid item sx={{  }}><HeadingOne /></Grid> */}
+             
               <Grid item id='part1' sx={{ }}> <PartOne /> </Grid>
               <Grid item id='part2' sx={{ }}><PartTwo /></Grid>
               <Grid item id='part3' sx={{ }}><PartThree /></Grid>

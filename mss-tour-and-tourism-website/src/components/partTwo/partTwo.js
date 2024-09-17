@@ -27,13 +27,13 @@ const PartTwo=()=>{
         <Link to='/detailpage'>
           <ButtonBase>
 
-        <Box sx={{ display:'flex',direction:'row',height:400 }}>
+        <Box sx={{ display:'flex',direction:'row',height:300 }}>
 
-           <Box > < img src={props.image} style={{ width:600,height:400 }}/></Box>
+           <Box > < img src={props.image} style={{ width:500,height:300 }}/></Box>
 
-           <Box sx={{ backgroundColor:'white',color:'black',boxShadow:4 }}>  
+           <Box sx={{ backgroundColor:'white',color:'black',boxShadow:4 ,width:600}}>  
               <h1 > {props.title}</h1>
-                <p1 style={{ fontSize:'26px'}}>
+                <p1 style={{ fontSize:'22px'}}>
                   {props.description}
                </p1>
           </Box>
@@ -58,7 +58,8 @@ const PartTwo=()=>{
 
        return(
         <Stack
-         sx={{ height:780,
+         sx={{ height:720,
+          width:1270,
          backgroundColor:'#0a0a0a',
          opacity: 0.9,
          color:'white',
@@ -71,8 +72,13 @@ const PartTwo=()=>{
 
         }}>
           <h1 >Ethiopia has alot place to visit</h1>
-          <p style={{ fontSize:'25px' }}>Ethiopia is the “Land of Thirteen Months”. It's a magical country with ancient 
-          and spiritual roots, rich in significant religious history and that has a fabulous story to tell. The beauty of wild mountains is only surpassed by the awe-inspiring religious architecture that draws visitors to this amazing country. It’s where legends of the Ark of the Covenant live side by side and in harmony with ancient Islamic mosques. From thundering waterfalls to its vibrant and modern capital city, Addis Ababa, Ethiopia is a place you have to see to believe. Here are 10 of the best and most incredible places to visit in Ethiopia.
+          <p style={{ fontSize:'23px' }}>Ethiopia is the “Land of Thirteen Months”. It's a magical country with ancient 
+          and spiritual roots, rich in significant religious history and that has a fabulous story to tell. The beauty of wild mountains is only surpassed 
+          by the awe-inspiring religious architecture that draws visitors to 
+          this amazing country. It’s where legends of the Ark of the Covenant live 
+          side by side and in harmony with ancient Islamic mosques. 
+          From thundering waterfalls to its vibrant and modern capital city, 
+          Addis Ababa,
           </p>
           <h1 style={{ textAlign:'left' ,marginTop:30 ,position:'relative' ,marginLeft:19}}>Most visted places</h1>
           <Box   p={3}>

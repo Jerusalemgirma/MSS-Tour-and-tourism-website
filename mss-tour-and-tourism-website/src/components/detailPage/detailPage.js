@@ -35,8 +35,8 @@ const DetailPage=()=>{
         return(
             <Link to='/detailpage'>
              <ButtonBase>
-              <Box sx={{ borderRadius:8, boxShadow:3 ,width:285,height:220}}>
-                <img src={props.imagee} style={{ borderRadius:8,width:284,height:150}}/>
+              <Box sx={{ borderRadius:8, boxShadow:3 ,width:255,height:200}}>
+                <img src={props.imagee} style={{ borderRadius:8,width:254,height:150}}/>
                 <h3 style={{ textAlign:'center',color:'black' }}>{props.title}</h3>
               </Box>
             </ButtonBase>
@@ -49,31 +49,31 @@ const DetailPage=()=>{
     <Box p={2}>
 
         <Stack direction='row'>
-          <img src={img1} style={{ width:600, height:400,borderRadius:8}}/>
+          <img src={img1} style={{ width:550, height:350,borderRadius:8}}/>
           <Box>
             <h1 style={{ textAlign:'center' }}>Awash Park</h1>
-            <p style={{ fontSize:25,paddingLeft:20,paddingRight:10 }}>Awash National Park is a national park in Ethiopx xqa. Located at the border of Oromia state and Afar state, the park covers an area of 827 square kilometers, most of it lies at an altitude of 900 meters. Spanning across the southern tip of the Afar Region and the northeastern corner of the East Shewa Zone of Oromia, this park is 225 kilometers east of Addis Ababa (and a few kilometers west of Awash and east of Metehara).
+            <p style={{ fontSize:23,paddingLeft:20,paddingRight:10 }}>Awash National Park is a national park in Ethiopx xqa. Located at the border of Oromia state and Afar state, the park covers an area of 827 square kilometers, most of it lies at an altitude of 900 meters. Spanning across the southern tip of the Afar Region and the northeastern corner of the East Shewa Zone of Oromia, this park is 225 kilometers east of Addis Ababa (and a few kilometers west of Awash and east of Metehara).
 
                   The park is best known for its rich biodiversity and rural landscapes.
                   the region is subject to a bimodal rainfall pattern a rainy season
                    followed by a dominant dry season which can last up to 10 months .
 
             </p>
-               <p style={{ top:65,position:'relative', fontSize:20 ,paddingLeft:25}}>
+               <p style={{ top:10,position:'relative', fontSize:20 ,paddingLeft:25}}>
                 <Link><b style={{ paddingRight:12 }}>#Park</b> </Link>
                <Link ><b>#Oromia</b></Link> 
               </p>
           </Box>
         </Stack>
         <Stack direction='row' spacing={1} pt={1}>
-        <img src={img2} style={{ width:390}}/>
-        <img src={img3} style={{ width:380}}/>
+        <img src={img2} style={{ width:300}}/>
+        <img src={img3} style={{ width:300}}/>
         <img src={img4} style={{ width:390}}/>
         <img src={img5} style={{ width:380}}/>
-        <img src={img6} style={{ width:390}}/>
+        {/* <img src={img6} style={{ width:390}}/> */}
         </Stack>
 
-      <Box mt={15}>
+      <Box mt={6}>
         <h1>Other park reccommandation</h1>
         <Stack direction='row' spacing={1} pb={2}>
             <Cardd imagee={img7}
@@ -91,9 +91,9 @@ const DetailPage=()=>{
              <Cardd imagee={img11}
                    title='Abidjatta-Shalla National Park'
                />
-               <Cardd imagee={img12}
+               {/* <Cardd imagee={img12}
                    title='Chebera Churchura National Park'
-               />
+               /> */}
           
         </Stack>
         <Stack direction='row' spacing={1}>
@@ -131,9 +131,9 @@ const DetailPage=()=>{
              <Cardd imagee={img20}
                    title='The Mausoleum of Menelik II'
                />
-            <Cardd imagee={img21}
+            {/* <Cardd imagee={img21}
                 title='Lake Langano'
-             /> 
+             />  */}
            
         </Stack>
         <Stack direction='row' spacing={1}>

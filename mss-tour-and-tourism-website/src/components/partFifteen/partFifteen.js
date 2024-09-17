@@ -29,17 +29,10 @@ const PartFifteen=()=>{
 
     return(
         <Stack spacing={5} mt={6}>
-        <Stack direction='row' spacing={4} pl={10}>
+        <Stack direction='row' spacing={4} pl={5}>
          
                 
-               <Box>
-                
-                <Cardd    
-                          imagee={img2}
-                           title='Awash Park'
-                           explanation='Awash National Park is a
-                            national park in Ethiopia. Located at the border of Oromia state and Afar state'/>
-            </Box>
+              
             <Box>
                 
                 <Cardd    
@@ -69,7 +62,7 @@ const PartFifteen=()=>{
          
           
         </Stack>
-        <Stack direction='row' spacing={4} pl={10}>
+        <Stack direction='row' spacing={4} pl={5}>
                
          <Box>
           
@@ -95,13 +88,7 @@ const PartFifteen=()=>{
                      explanation='Aksum symbolizes the wealth and importance of the civilization of 
                      the ancient Aksumite kingdom,'/>
       </Box>
-      <Box>
-          
-          <Cardd    
-                    imagee={img17}
-                     title='Lalibela'
-                     explanation='Lalibela is a site of pilgrimage for millions of Ethiopian Orthodox Christians.'/>
-      </Box>
+      
    
     
   </Stack>

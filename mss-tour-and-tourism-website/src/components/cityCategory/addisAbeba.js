@@ -32,14 +32,14 @@ const AddisAbeba=()=>{
         return(
             <Link to='/detailpage' >
 <ButtonBase>
-        <Stack direction='row' spacing={2} sx={{height:400,borderBottom:1,boxShadow:2,borderRadius:4 ,borderColor:'black'}} pl={3} >
+        <Stack direction='row' spacing={2} sx={{height:300,borderBottom:1,boxShadow:2,borderRadius:4 ,borderColor:'black'}} pl={3} >
             <Box pt={2} >
-                <img src={props.imagee} style={{ height:365,width:550 ,borderRadius:8}}/>
+                <img src={props.imagee} style={{ height:260,width:500 ,borderRadius:8}}/>
             </Box>
-            <Box pt={8}>
-                <h1 style={{color:'black' , textAlign:'center' }}>{props.title}</h1>
-                <p style={{color:'black' , fontSize:26,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
-                <Button variant='contained'  sx={{ textAlign:'center',marginTop:5 }}> Read more...</Button>
+            <Box pt={2}>
+                <h2 style={{color:'black' , textAlign:'center' }}>{props.title}</h2>
+                <p style={{color:'black' , fontSize:23,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
+                <Button variant='contained'  sx={{ textAlign:'center',marginTop:3 }}> Read more...</Button>
             </Box>
         </Stack>
         </ButtonBase>
@@ -72,26 +72,35 @@ const AddisAbeba=()=>{
 
   <Part imagee={img4}
                 title='unity park'
-                 explanation='Unity Park is an amusement park located in Arat Kilo district of Addis Ababa, in the compound of National Palace. Established in October 2019, it features a zoo and historical artifacts. 
-                 Admission may be purchased by online services such as Ethio telecom or using Commercial Bank of Ethiopia'/>
+                 explanation='Unity Park is an amusement park located in 
+                 Arat Kilo district of Addis Ababa, in the compound of National Palace.
+                  Established in October 2019, it features a zoo and historical artifacts. 
+                 Admission may be purchased by online services such as
+                  Ethio telecom or using Commercial Bank of Ethiopia'/>
   <Part imagee={img5}
                 title='St. George Church'
                  explanation='Saint Georges Cathedral is an Ethiopian Orthodox church in Addis Ababa,
-               Ethiopia.The cathedral is noted for its distinctive octagonal form. It is located at the northern end of Churchill Road in the city.'/>
+               Ethiopia.The cathedral is noted for its distinctive octagonal form. 
+               It is located at the northern end of Churchill Road in the city.'/>
   <Part imagee={img6}
                 title='merkato'
                  explanation='Merkato is a large open-air marketplace 
-                 in the Addis Ketema, district of Addis Ababa, Ethiopia, and the name refers to the neighborhood in which it is located.'/>
+                 in the Addis Ketema, district of Addis Ababa, Ethiopia, and the
+                  name refers to the neighborhood in which it is located.'/>
   <Part imagee={img7}
                 title='Red Terror Martyrs Memorial Museum'
-                 explanation='The "Red Terror" Martyrs Memorial Museum in Addis Ababa was established in 2010 as a memorial to those who died during the Red Terror under the Derg government. 
-                 The museum has displays of torture instruments, skulls and bones, coffins, bloody clothes and photographs of victims'/>
+                 explanation='The "Red Terror" Martyrs Memorial Museum 
+                 in Addis Ababa was established in 2010 as a memorial to those
+                  who died during the Red Terror under the Derg government. 
+                 The museum has displays of torture instruments, skulls and bones, coffins,
+                  bloody clothes and photographs of victims'/>
   <Part imagee={img8}
                 title='Entoto St. Maryam Church                '
                  explanation='The octagonal Entoto Maryam Church hosted Menelik s coronation, 
                  but sadly for a church of such historical significance, the only time you can
-                  catch a glimpse of the interior is during Sunday Mass, and even then, casual visitors (as opposed to genuine worshipers) are not welcome.
-                  Down the hill on the back side of the building are the remains of Menelik s rather modest palace.'/>
+                  catch a glimpse of the interior is during Sunday Mass, and even then
+                  Down the hill on the back side of the building are the remains of
+                   Menelik s rather modest palace.'/>
   <Part imagee={img9}
                 title='Meskel Square   '
                  explanation='Meskel Square is a public square in the city of Addis Ababa, 
@@ -100,7 +109,8 @@ const AddisAbeba=()=>{
 
 <Part imagee={img10}
                 title='Mount Entoto'
-                 explanation='Mount Entoto is the highest peak on the Entoto Mountains, which overlooks the city of Addis Ababa, 
+                 explanation='Mount Entoto is the highest peak on the Entoto Mountains, 
+                 which overlooks the city of Addis Ababa, 
                  the capital of Ethiopia. It reaches 3,200 meters above sea level'/>
 
 <Part imagee={img11}
@@ -111,11 +121,14 @@ const AddisAbeba=()=>{
                  thiopia located in a place of Merkato within Arada district.'/>
 <Part imagee={img12}
                  title='Derg Monument                 '
-                  explanation='The Tiglachin Monument, also known as the Derg Monument, is a memorial to Ethiopian and Cuban soldiers involved in the Ogaden War.
-                   It was built during the rule of Mengistu Haile Mariam and is located on Churchill Avenue in Addis Ababa, Ethiopia'/>
+                  explanation='The Tiglachin Monument, also known as the Derg Monument, is
+                   a memorial to Ethiopian and Cuban soldiers involved in the Ogaden War.
+                   It was built during the rule of Mengistu Haile Mariam and is located 
+                   on Churchill Avenue in Addis Ababa, Ethiopia'/>
 <Part imagee={img13}
                   title='Medhanealem Cathedral                  '
-                   explanation='Medhane Alem Cathedral, whose name means "Saviour of the World", is an Ethiopian Orthodox Tewahedo cathedral in Bole Medhanealem, Addis Ababa, Ethiopia. 
+                   explanation='Medhane Alem Cathedral, whose name means "Saviour of 
+                   the World", is an Ethiopian Orthodox Tewahedo cathedral in Bole Medhanealem, Addis Ababa, Ethiopia. 
                    It is the second largest cathedral in the whole of Africa and the largest in Ethiopia.'/>
 <Part imagee={img14}
                    title='Lion of Judah Statue '
@@ -124,12 +137,15 @@ const AddisAbeba=()=>{
 
 <Part imagee={img15}
                    title='Menelik II Square '
-                    explanation='Menelik II Square is located in the heart of Addis Ababa, the area locally known as Arada. At the center of the square stands a magnificent equestrian statue of the Emperor.
+                    explanation='Menelik II Square is located in the heart of Addis Ababa, 
+                    the area locally known as Arada. At the center of the square stands a 
+                    magnificent equestrian statue of the Emperor.
                      The monument was erected by Emperor Haile Selassie I, in 1930, just before his coronation.'
                      />
   <Part imagee={img16}
                    title='Yekatit 12 Monument ( የካቲት 12 መታሰብያ ሐውልት )'
-                    explanation='The Yekatit 12 is a monument in Addis Ababa commemorating victims of Italian reprisals following an attempt to kill the Marshal Rodolfo Graziani, marchese di Neghelli, Viceroy of Italian East Africa,
+                    explanation='The Yekatit 12 is a monument in Addis Ababa commemorating
+                     victims of Italian reprisals following an attempt to kill the Marshal Rodolfo Graziani, marchese di Neghelli, Viceroy of Italian East Africa,
                      on 19 February 1937, or Yekatit 12 in the Ethiopian calendar.'
                      />
 <Part imagee={img17}

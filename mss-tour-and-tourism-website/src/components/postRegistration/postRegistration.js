@@ -19,12 +19,12 @@ export default function PostRegistration(){
     }
 
     return(
-        <Box style={{color:'black'}}  pr={37} ml={27} pt={7}  pb={10}>
+        <Box style={{color:'black'}}  pr={17} ml={7} pt={7}  pb={10}>
 
         <Stack   sx={{boxShadow:5}} direction='row' spacing={9} bgcolor="#ebf5f0" >
 
             <Box   > 
-                <img src={imagee} style={{height:680,width:610}}  alt='photo'/>
+                <img src={imagee} style={{height:680,width:510}}  alt='photo'/>
             </Box>
 
             <Box   pt={4} sx={{ width:500, }} > 

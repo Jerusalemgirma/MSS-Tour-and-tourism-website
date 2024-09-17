@@ -60,14 +60,14 @@ const PartOne=()=>{
                             Addis Ababa’s Bustling Center. 
                         '/>
             </Box>
-            <Box>
+            {/* <Box>
                 
                 <Cardd    
                           imagee={img5}
                            title='Blue Nile River '
                            explanation='The Blue Nile is a river originating at Lake Tana in Ethiopia.
                             It travels for approximately 1,450 km through Ethiopia and Sudan'/>
-            </Box>
+            </Box> */}
          
           
         </Stack>
@@ -97,14 +97,14 @@ const PartOne=()=>{
                      explanation='Aksum symbolizes the wealth and importance of the civilization of 
                      the ancient Aksumite kingdom,'/>
       </Box>
-      <Box>
+      {/* <Box>
           
           <Cardd    
                     imagee={img17}
                      title='Lalibela'
                      explanation='Lalibela is a site of pilgrimage for millions of Ethiopian Orthodox Christians.'/>
       </Box>
-   
+    */}
     
   </Stack>
         

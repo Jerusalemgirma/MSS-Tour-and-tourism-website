@@ -32,11 +32,11 @@ const Hotels=()=>{
               <ButtonBase>
                <Stack direction='row' spacing={2} sx={{ height:400,borderBottom:1,boxShadow:2,borderRadius:4,borderColor:'black' }} pl={3} >
               <Box pt={2} >
-                <img src={props.imagee} style={{ height:365,width:550 ,borderRadius:8}}/>
+                <img src={props.imagee} style={{ height:305,width:500 ,borderRadius:8}}/>
              </Box>
-            <Box pt={8}>
+            <Box pt={3}>
                 <h1 style={{ textAlign:'center',color:'black' }}>{props.title}</h1>
-                <p style={{ color:'black',fontSize:26,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
+                <p style={{ color:'black',fontSize:22,paddingLeft:'10px',paddingRight:'10px' }}> {props.explanation}</p>
                 <Button variant='contained'  sx={{ textAlign:'center',marginTop:5 }}> Read more...</Button>
             </Box>
         </Stack>

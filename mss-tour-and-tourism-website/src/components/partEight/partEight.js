@@ -54,23 +54,23 @@ const PartEight=()=>{
        
 
         return(
-            <Stack direction='row' p={2} sx={{boxShadow:4,backgroundColor:'#F3F7F9' }} >
-              <Box sx={{ width:650,marginRight:2 }}>
-                  <img src={props.image1} style={{ width:635 ,height:835}}/>
+            <Stack direction='row' p={2} sx={{boxShadow:4,backgroundColor:'#F3F7F9',width:1300 }} >
+              <Box sx={{ width:500,marginRight:2 }}>
+                  <img src={props.image1} style={{ width:500 ,height:700}}/>
               </Box>
-              <Box  sx={{ textAlign:"center"}}>
-                    <h1>{props.name}</h1>
+              <Box  sx={{ textAlign:"center" , width:700}}>
+                    <h2>{props.name}</h2>
                     <h6 style={{ fontSize:20 }}>{props.location}</h6>
-                    <p style={{ fontSize:30,marginLeft:30,marginRight:30,marginBottom:108}}>{props.detail}</p>
-                    <Stack  direction='row' ml={60} pl={7} sx={{ boxShadow:3 ,width:160 }}> 
+                    <p style={{ fontSize:24,marginLeft:30,marginBottom:10}}>{props.detail}</p>
+                    <Stack  direction='row' ml={30} pl={5} sx={{ boxShadow:3 ,width:160 }}> 
                         <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
                         <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
                     </Stack>
                   <Stack direction='row' spacing={1} >
-                    <img src={props.image5} style={{ width:265,height:210 }}/>
-                    <img src={props.image3 } style={{ width:270,height:210 }}/>
-                    <img src={props.image4} style={{ width:270,height:210 }}/>
-                    <img src={props.image2} style={{ width:270,height:210}}/>
+                    <img src={props.image5} style={{ width:180,height:210 }}/>
+                    <img src={props.image3 } style={{ width:180,height:210 }}/>
+                    <img src={props.image4} style={{ width:180,height:210 }}/>
+                    <img src={props.image2} style={{ width:180,height:210}}/>
                  </Stack>
              </Box>
 
@@ -81,18 +81,20 @@ const PartEight=()=>{
     )}
     return(
         <Box >
-            <Box pb={4}pl={11} pr={17} sx={{ backgroundColor:'#d6e5de',fontSize:25 }}>
-                <h1 style={{ textAlign:'center' }}> Ethiopia’s Festivals and Celebrations</h1>
-                <p>
-                 Celebrations in Ethiopia are great and colorful events, mostly religious, and frequently take place over several days. Important Christian holidays include Meskel, Christmas, Timkat, Kiddus Yohannes and Easter. Timkat, which marks Christ's baptism, is the most colorful event of the year.  In September, the two-day feast of Meskal marks the finding of the True Cross.  Kiddus Yohannes, New Year's Day comes on September 11, which coincides with the end of the season of heavy rains and the beginning of spring. 
-                  ​Muslim holidays are based on the lunar calendar and fall at different times each year. The ninth month of the Muslim calendar is devoted to Ramadan, which is marked by fasting. One of the great Muslim feasts of the year is 'Id Al Fatr, which celebrates the end of Ramadan. The 'Id al Adha is the feast marking Abraham's willingness to sacrifice Isaac as commanded by God.  On these days, after praying and listening to the imam (religious leader), Muslim Ethiopians sacrifice animals and distribute part of the meat to the poor. Wearing new clothes, they visit friends and relatives as well as family graves.  Horse races are also traditional on these days.  Muslims celebrate the Prophet Mohammed's birthday on September 20 and mark the anniversaries of numerous martyrs.
-                <b style={{ fontSize:30 }}>some events are even registerd on unesico</b>
+            <Box pb={4} pl={7}  sx={{ backgroundColor:'#d6e5de',fontSize:22 ,width:1250}}>
+                <h2 style={{ textAlign:'center' }}> Ethiopia’s Festivals and Celebrations</h2>
+                <p style={{ }}>
+                   holidays are based on the lunar calendar and fall at different times each year. 
+                   The ninth month of the Muslim calendar is devoted to Ramadan, which is marked by 
+                   fasting. One of the great Muslim feasts of the year is 'Id Al Fatr, 
+                   which celebrates the end of Ramadan. The 'Id al Adha is the feast marking
+                    Abraham's willingness to sacrifice Isaac as commanded by God.  On these days, 
+                    after praying and listening to the imam (religious leader), Muslim Ethiopians.                    
                 
                 </p>
             </Box>
-        <h1> Ethiopia has also unesico registerd  intangible heritages</h1>
+        <h2> Ethiopia has also unesico registerd  intangible heritages</h2>
         <p>
-        {/* Celebrations in Ethiopia are great and colorful events, mostly religious, and frequently take place over several days. */}
         
         </p>
         { (count===3) && <Cardd 

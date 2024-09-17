@@ -55,21 +55,21 @@ const PartThirteen=()=>{
     }
 
     return(
-        <Box>
-            <Box pl={2}>
-                <h1 >
-                    Festivals, holiday and Celebrations in ethiopia are so colorful and attractive.
+        <Box sx={{width:1300 }}>
+            <Box  pl={5 } pr={10} >
+                <h1 style={{ }} >
+                    Festivals, holiday and Celebrations in ethiopia are so
+                     colorful and attractive.
                     This are some famous holidays and festivals..
                 </h1>
             </Box>
-        <Stack direction='column' spacing={2} p={7} sx={{ backgroundColor:'#f2f4f6' }}>
+        <Stack direction='column' spacing={2} p={7} pl={3} pr={3} sx={{ backgroundColor:'#f2f4f6' }}>
             
             <h1>holidays</h1> 
            <Stack direction='row' spacing={3}>
            <Cardd imagee={img1} title='Ethiopian Christmas' explanation="Christian's holiday" />
            <Cardd imagee={img2} title='Mawlid' explanation='Muslims holiday' />          
            <Cardd imagee={img3} title='Eastern' explanation='Christians holiday' />
-           <Cardd imagee={img4} title='Eid al-Fitr' explanation='Muslims holiday' />
            <Cardd imagee={img5} title='Meskel' explanation='Christians holiday' />
 
            </Stack>
@@ -98,9 +98,6 @@ const PartThirteen=()=>{
            <Cardd imagee={img15} title='Buhe' explanation='boys festival' />
            <Cardd imagee={img16} title='Fichee-Chambalaalla' explanation='sidamas festival' />
 
-           {/* <Cardd imagee={img1} title='ashenday' explanation='girls festival' /> */}
-
-           {/* <Cardd imagee={img1} title='ashenday' explanation='girls festival' /> */}
  
            </Stack>
           {/* <Cardd imagee={img1} title='ashenday' explanation='girls festival' /> */}

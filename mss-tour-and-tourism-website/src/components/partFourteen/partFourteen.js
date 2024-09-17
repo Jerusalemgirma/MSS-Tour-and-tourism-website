@@ -60,7 +60,7 @@ const PartFourteen=()=>{
         return(
         <Box sx={{ borderRadius:'7%', border:0.5,textAlign:"center" }}>
             <h2 >{props.title}</h2>
-            <img src={props.imagee} style={{ width:320,height:260 ,borderBottomLeftRadius:'7%',borderBottomRightRadius:'7%'}}/>
+            <img src={props.imagee} style={{ width:250,height:230 ,borderBottomLeftRadius:'7%',borderBottomRightRadius:'7%'}}/>
         </Box>
         )
     }
@@ -68,7 +68,7 @@ const PartFourteen=()=>{
     const Two=(props)=>{
         return(
         <Box sx={{ borderRadius:'7%', border:0.5,textAlign:"center"}}>
-            <img src={props.imagee} style={{ width:320,height:260 ,borderTopLeftRadius: '7%', borderTopRightRadius: '7%'}}/>
+            <img src={props.imagee} style={{ width:240,height:230 ,borderTopLeftRadius: '7%', borderTopRightRadius: '7%'}}/>
             <h2 >{props.title}</h2>
 
         </Box>
@@ -91,12 +91,12 @@ const PartFourteen=()=>{
     return(
     <Box>
         <h1> Nations and Nationalities in Ethiopia</h1>
-        <Stack direction='row'spacing={2} pr={13} pl={2}>
+        <Stack direction='row'spacing={2}  pl={2}>
 
             <Box >
-                <img src={imgg}/>
+                <img src={imgg} style={{width:500}}/>
             </Box>
-            <h2 style={{ textAlign:'center' }}>
+            <h3 style={{ textAlign:'center', width:800 }}>
             The Ethiopian peoples comprise about eighty nationalities of which the
              Amhara and the Oromo constitute the majority, with about 60 percent of 
              the total population. Ethiopia represents a melting pot of ancient cultures with Middle Eastern and African cultures evident in the religious, ethnic and language composition 
@@ -106,11 +106,11 @@ const PartFourteen=()=>{
             
              Ethiopia is the oldest independent country in Africa and one of the oldest in the world. What are believed to be the oldest remains of a human ancestor ever found, which have been dated as being some five million years old, were discovered in the Awash Valley in Ethiopia. This beats the discovery of “Lucy”, a 3.2 million year old skeleton, who was unearthed in the same area in 1974.
 
-            </h2>
+            </h3>
         </Stack>
         <h1> Some nationalities are listed below...</h1>
        { (count ===1) && 
-       <Stack direction='column' spacing={1} borderRadius='7%' pl={7}>
+       <Stack direction='column' spacing={1} borderRadius='7%' pl={4}>
         <Stack direction='row' spacing={1}> 
           <One imagee={img1} title='Afar'/>
           <Two imagee={img2} title='Amhara'/>
@@ -150,16 +150,13 @@ const PartFourteen=()=>{
         <One imagee={img25} title='Somali'/>
       </Stack> <Stack direction='row' spacing={1}> 
         <One imagee={img26} title='Welayta'/>
-        {/* <Two imagee={img12} title='Gurage'/>
-        <One imagee={img13} title='Hadya'/>
-        <Two imagee={img14} title='Halaba'/>
-        <One imagee={img15} title='Hamar'/> */}
+        
       </Stack>
   </Stack>
       } 
-     <Stack  direction='row' ml={90} pl={7} sx={{ boxShadow:3 ,width:160 }} mt={5}> 
-                        <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
-                        <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
+     <Stack  direction='row' ml={70} justify-content='center'  pl={7} sx={{ boxShadow:3 ,width:160 }} mt={5}> 
+            <ButtonBase onClick={minus}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowBackIosIcon /></Box></ButtonBase> 
+            <ButtonBase onClick={add}><Box  sx={{ border:3,borderRadius:'50%',width:40,height:40,paddingTop:2 ,paddingLeft:1}}><ArrowForwardIosSharpIcon  /></Box></ButtonBase> 
     </Stack>
     </Box>
 )}
